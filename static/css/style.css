@@ -33,278 +33,6 @@ a {
     text-decoration: none;
     outline: none; }
 
-.row.m0 {
-  margin: 0px; }
-
-button:focus {
-  outline: none;
-  box-shadow: none; }
-
-.mb-15 {
-  margin-bottom: 15px; }
-
-.mt-10 {
-  margin-top: 10px; }
-
-.mt-20 {
-  margin-top: 20px; }
-
-.mt-25 {
-  margin-top: 25px; }
-
-.white_bg {
-  background: #fff !important; }
-
-.mt-100 {
-  margin-top: 100px; }
-  @media (max-width: 991px) {
-    .mt-100 {
-      margin-top: 0px; } }
-
-.mt--100 {
-  margin-top: -100px; }
-  @media (max-width: 991px) {
-    .mt--100 {
-      margin-top: 0px; } }
-
-.title-bg {
-  background: #002347; }
-
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-.section_gap {
-  padding: 130px 0; }
-  @media (max-width: 991px) {
-    .section_gap {
-      padding: 70px 0; } }
-
-.section_gap_top {
-  padding-top: 130px; }
-  @media (max-width: 991px) {
-    .section_gap_top {
-      padding-top: 70px; } }
-
-.section_gap_bottom {
-  padding-bottom: 130px; }
-  @media (max-width: 991px) {
-    .section_gap_bottom {
-      padding-bottom: 70px; } }
-
-/* Main Title Area css
-============================================================================================ */
-.main_title {
-  text-align: center;
-  margin-bottom: 100px; }
-  @media (max-width: 991px) {
-    .main_title {
-      margin-bottom: 40px; } }
-  .main_title h2 {
-    font-size: 36px;
-    line-height: 30px;
-    font-weight: bold;
-    margin-bottom: 15px; }
-    @media (max-width: 575px) {
-      .main_title h2 {
-        font-size: 30px;
-        margin-bottom: 10px; } }
-  .main_title p {
-    font-size: 16px;
-    margin-bottom: 0px;
-    font-style: italic; }
-  
-
-.lite_bg {
-  background: #f9f9f9; }
-
-/* End Main Title Area css
-============================================================================================ */
-/* Start Overlay css
-============================================================================================ */
-.overlay {
-  position: relative; }
-
-.overlay:after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  content: "";
-  z-index: -1; }
-
-/* End Overlay css
-============================================================================================ */
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-.header_area {
-  position: absolute;
-  width: 100%;
-  z-index: 99;
-  transition: background 0.4s, all 0.3s linear; }
-  .header_area .navbar {
-    background: transparent;
-    padding: 0px;
-    border: 0px;
-    border-radius: 0px; }
-    .header_area .navbar .nav .nav-item {
-      margin-right: 45px; }
-      .header_area .navbar .nav .nav-item .nav-link {
-        font: 500 14px/80px "Rubik", sans-serif;
-        text-transform: capitalize;
-        color: #002347;
-        padding: 0px;
-        display: inline-block; }
-        @media (max-width: 991px) {
-          .header_area .navbar .nav .nav-item .nav-link {
-            color: #ffffff; } }
-        .header_area .navbar .nav .nav-item .nav-link:after {
-          display: none; }
-      .header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
-        color: #fdc632; }
-      .header_area .navbar .nav .nav-item.submenu {
-        position: relative; }
-        .header_area .navbar .nav .nav-item.submenu ul {
-          border: none;
-          padding: 0px;
-          border-radius: 0px;
-          box-shadow: none;
-          margin: 0px;
-          background: #fff; }
-          @media (min-width: 992px) {
-            .header_area .navbar .nav .nav-item.submenu ul {
-              position: absolute;
-              top: 120%;
-              left: 0px;
-              min-width: 200px;
-              text-align: left;
-              opacity: 0;
-              transition: all 300ms ease-in;
-              visibility: hidden;
-              display: block;
-              border: none;
-              padding: 0px;
-              border-radius: 0px; } }
-          .header_area .navbar .nav .nav-item.submenu ul:before {
-            content: "";
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 10px 10px 0 10px;
-            border-color: #eeeeee transparent transparent transparent;
-            position: absolute;
-            right: 24px;
-            top: 45px;
-            z-index: 3;
-            opacity: 0;
-            transition: all 400ms linear; }
-          .header_area .navbar .nav .nav-item.submenu ul .nav-item {
-            display: block;
-            float: none;
-            margin-right: 0px;
-            border-bottom: 1px solid #ededed;
-            margin-left: 0px;
-            transition: all 0.4s linear; }
-            .header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
-              line-height: 45px;
-              color: #002347;
-              padding: 0px 30px;
-              transition: all 150ms linear;
-              display: block;
-              margin-right: 0px; }
-            .header_area .navbar .nav .nav-item.submenu ul .nav-item:last-child {
-              border-bottom: none; }
-            .header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
-              background: #fdc632;
-              color: #fff; }
-        @media (min-width: 992px) {
-          .header_area .navbar .nav .nav-item.submenu:hover ul {
-            visibility: visible;
-            opacity: 1;
-            top: 100%; } }
-        .header_area .navbar .nav .nav-item.submenu:hover ul .nav-item {
-          margin-top: 0px; }
-      .header_area .navbar .nav .nav-item:last-child {
-        margin-right: 0px; }
-    .header_area .navbar .search {
-      font-size: 12px;
-      line-height: 60px;
-      display: inline-block;
-      color: #002347; }
-      .header_area .navbar .search i {
-        font-weight: 600; }
-  .header_area.white-header .navbar .nav .nav-item.active .nav-link, .header_area.white-header .navbar .nav .nav-item:hover .nav-link {
-    color: #fdc632; }
-  .header_area.white-header .navbar .nav .nav-item .nav-link {
-    color: #ffffff; }
-  .header_area.navbar_fixed .main_menu {
-    position: fixed;
-    width: 100%;
-    top: -70px;
-    left: 0;
-    right: 0;
-    background: #ffffff;
-    -webkit-transform: translateY(70px);
-    -moz-transform: translateY(70px);
-    -ms-transform: translateY(70px);
-    -o-transform: translateY(70px);
-    transform: translateY(70px);
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1); }
-    .header_area.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
-      line-height: 70px; }
-    .header_area.navbar_fixed .main_menu .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
-      color: #002347; }
-  .header_area.white-header.navbar_fixed .main_menu {
-    background: #002347; }
-    .header_area.white-header.navbar_fixed .main_menu .navbar .nav .nav-item.active .nav-link, .header_area.white-header.navbar_fixed .main_menu .navbar .nav .nav-item:hover .nav-link {
-      color: #fdc632; }
-
-#search_input_box {
-  background: #fdc632;
-  text-align: center;
-  padding: 5px 20px; }
-  #search_input_box .form-control {
-    padding-left: 0;
-    background: transparent;
-    border: 0;
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 18px; }
-    #search_input_box .form-control:focus {
-      box-shadow: none;
-      outline: none; }
-  #search_input_box input.placeholder {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: normal; }
-  #search_input_box input:-moz-placeholder {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: normal; }
-  #search_input_box input::-moz-placeholder {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: normal; }
-  #search_input_box input::-webkit-input-placeholder {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: normal; }
-  #search_input_box .btn {
-    width: 0;
-    height: 0;
-    padding: 0;
-    border: 0; }
-  #search_input_box #close_search {
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
-    padding: 10px 0; }
-
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
 /* Home Banner Area css
 ============================================================================================ */
 .home_banner_area {
@@ -837,7 +565,7 @@ padding-top: 40px;
 .navbar-right ul li a {
   color: #333;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 200;
 }
 .navbar-right ul {
   text-align: right;
@@ -869,23 +597,36 @@ padding-top: 40px;
 .button:hover {
   background-color: #e9e9e9; /* Button background color on hover */
 }
+
+
+
+
 .footer {
   background-color: #ffffff; /* White background */
   padding: 50px 0; /* Adjust padding as needed */
 }
-.footer .container
-{
+
+.footer .container {
   padding: 30px;
   border: 1px solid black;
 }
+
 .location-info {
   margin-bottom: 20px; /* Space between location and contact info */
 }
 
 .logo {
   text-align: center; /* Center the logo */
+}
+
+.logo img {
+  max-width: 100%; /* Ensure the logo image doesn't exceed the container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Make the image a block element */
+  margin: 0 auto; /* Center the image horizontally */
   margin-bottom: 20px; /* Space between logo and navigation links */
 }
+
 
 .footer-links {
   text-align: right; /* Align navigation links to the right */
@@ -911,6 +652,35 @@ padding-top: 40px;
 .footer-links ul li a:hover {
   color: #007bff; /* Link color on hover */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .login-body {
   display: flex;
@@ -1107,4 +877,213 @@ padding-top: 40px;
   background-size: 80%; /* Adjust the size of the background image */
   background-position: center;
   overflow: hidden; /* Prevent overflowing content */
+}
+
+
+.bnrabs1 {
+  padding-bottom: 100px;
+  margin: 50px;
+}
+@media (max-width: 991px) {
+  .bnrabs1 {
+    padding-bottom: 40px;
+  }
+}
+
+.bnrabs1.single_feature {
+  position: relative;
+  background: #f9f9ff;
+  padding: 0; /* Remove padding */
+  margin-bottom: 30px;
+  height: auto; /* Set height to auto */
+  overflow: hidden; /* Clear floats */
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 480px) {
+  .bnrabs1 .single_feature {
+    padding: 0; /* Remove padding */
+  }
+}
+.bnrabs1.single_feature .icon {
+  float: right; /* Align the icon to the right */
+  margin-left: 20px; /* Adding some space between icon and text */
+}
+.bnrabs1.single_feature .icon img {
+  width: auto; /* Set image width to auto */
+  height: 100%; /* Set image height to 100% */
+}.bnrabs1.single_feature h4 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px; /* Add margin to separate from buttons */
+  line-height: 1.2; /* Adjust line height as needed */
+}
+
+.bnrabs1.single_feature p {
+  margin-bottom: 0px;
+}
+.bnrabs1.single_feature .buttons {
+  margin-top: 20px; /* Add margin to separate from text */
+}
+.bnrabs1.single_feature .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Your button color */
+  color: #fff; /* Button text color */
+  text-decoration: none;
+  border-radius: 20px; /* Border radius */
+  margin-right: 10px; /* Add margin between buttons */
+}
+.bnrabs1.single_feature .button:last-child {
+  margin-right: 0; /* Remove margin from last button */
+}
+
+
+
+
+
+.absbn2
+{
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.map {
+  padding-bottom: 100px;
+  margin: 50px;
+}
+@media (max-width: 991px) {
+  .map {
+    padding-bottom: 40px;
+  }
+}
+
+.map .single_feature {
+  position: relative;
+  background: #f9f9ff;
+  padding: 0; /* Remove padding */
+  margin-bottom: 30px;
+  height: auto; /* Set height to auto */
+  overflow: hidden; /* Clear floats */
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 480px) {
+  .map .single_feature {
+    padding: 0; /* Remove padding */
+  }
+}
+.map .single_feature .icon {
+  float: right; /* Align the icon to the right */
+  margin-left: 20px; /* Adding some space between icon and text */
+}
+.map .single_feature .icon img {
+  width: auto; /* Set image width to auto */
+  height: 100%; /* Set image height to 100% */
+}.map .single_feature h4 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px; /* Add margin to separate from buttons */
+  line-height: 1.2; /* Adjust line height as needed */
+}
+.map h5
+{
+  font-size: 30px;
+  font-weight: 100;
+  color: #020202;
+}
+.map .coninfo
+{
+  text-align: left;
+}
+.map .coninfo h4
+{
+ 
+  color: #020202;
+}
+.map .single_feature p {
+  color: #020202;
+  margin-bottom: 0px;
+}
+.map .single_feature .buttons {
+  margin-top: 20px; /* Add margin to separate from text */
+}
+.map .single_feature .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Your button color */
+  color: #fff; /* Button text color */
+  text-decoration: none;
+  border-radius: 20px; /* Border radius */
+  margin-right: 10px; /* Add margin between buttons */
+}
+.map .single_feature .button:last-child {
+  margin-right: 0; /* Remove margin from last button */
+}
+
+
+
+/* Form container */
+.contact-form {
+  margin-top: 30px;
+}
+
+/* Form title */
+.contact-form h2 {
+  text-align: left;
+  font-size: 60px;
+  margin-bottom: 60px;
+  color: #020202;
+
+}
+
+
+/* Form input fields */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Form submit button */
+.contact-form button[type="submit"] {
+  width: 10%;
+  padding: 10px;
+  background-color: #080808;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Form submit button on hover */
+.contact-form button[type="submit"]:hover {
+  background-color: #b6b6b6;
 }
