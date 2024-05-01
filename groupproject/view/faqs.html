@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discover</title>
+    <link rel="stylesheet" type="text/css" href="faqs.css">
+</head>
+<body>
+  <div class="div-faqs">
+    <div class="div-2-faqs">
+      <div class="div-3-faqs">
+        <div class="div-4-faqs">FAQs</div>
+        <div class="div-5-faqs">
+          Find answers to common questions about QuizMatcher and how it uses AI.
+        </div>
+      </div>
+      <div class="div-6-faqs">
+      <div class="div-9-faqs">
+            <div class="div-10-faqs">How does the university selection quiz work?</div>
+            <img
+              loading="lazy"
+              src="../images/plus.png"
+              class="img-faqs"
+              onclick="toggleHiddenSectionfirst()"
+            />
+          </div>
+          <div class="hidden-section-1">
+          <!-- Content of hidden section -->
+          Our university selection quiz is designed to help Baccalaureate students in Algeria choose the right university 
+          and specialization based on their interests, preferences, and goals. By answering a series of questions, students 
+          receive recommendations tailored to their needs, guiding them towards making informed decisions about their higher 
+          education journey.
+          </div>
+          <div class="div-9-faqs">
+            <div class="div-10-faqs">Can I retake the quiz if my preferences change or I want to explore different options?</div>
+            <img
+              loading="lazy"
+              src="../images/plus.png"
+              class="img-faqs"
+              onclick="toggleHiddenSectionsecond()"
+            />
+          </div>
+           <!-- Hidden section -->
+          <div class="hidden-section-2">
+          <!-- Content of hidden section -->
+          Absolutely! We understand that preferences and goals may evolve over time, which is why we offer the flexibility for students
+           to retake the quiz as needed. Whether you're reconsidering your career path or exploring new interests,
+           our quiz is here to assist you in finding the right university and specialization for your future endeavors.
+          </div>
+          <div class="div-9-faqs">
+            <div class="div-10-faqs">Is the quiz suitable for students from all academic backgrounds?</div>
+            <img
+              loading="lazy"
+              src="../images/plus.png"
+              class="img-faqs"
+              onclick="toggleHiddenSectionthird()"
+            />
+          </div>
+           <!-- Hidden section -->
+          <div class="hidden-section-3">
+          <!-- Content of hidden section -->
+          Yes, the university selection quiz is designed to be inclusive and beneficial for students from diverse academic backgrounds.
+           Whether you're interested in technology, healthcare, finance, marketing, or any other field, the quiz provides 
+          tailored recommendations to help you explore suitable university options and specializations.
+          </div>
+        
+      </div>
+      <div class="div-17-faqs">
+        <div class="div-18-faqs">
+          <div class="div-19-faqs">Contact Us</div>
+          <div class="div-20-faqs">
+            Get in touch with our team for any additional queries.
+          </div>
+        </div>
+        <div class="div-21-faqs">Contact</div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleHiddenSectionfirst() {
+      var hiddenSection = document.querySelector('.hidden-section-1');
+      hiddenSection.style.display = hiddenSection.style.display === 'none' ? 'block' : 'none';
+    }
+    function toggleHiddenSectionsecond() {
+      var hiddenSection = document.querySelector('.hidden-section-2');
+      hiddenSection.style.display = hiddenSection.style.display === 'none' ? 'block' : 'none';
+    }
+    function toggleHiddenSectionthird() {
+      var hiddenSection = document.querySelector('.hidden-section-3');
+      hiddenSection.style.display = hiddenSection.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+/* Apply a CSS reset to remove default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set full height and width for HTML and body */
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+.div-discover {
+    background-color: var(--Background-color-primary, #fff);
+    display: flex;
+    margin-top: -5px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 60px;
+  }
+  @media (max-width: 100%) {
+    .div-discover {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+  .div-2-discover {
+    margin: 32px 0 10px;
+  }
+  @media (max-width: 100%) {
+    .div-2-discover {
+      max-width: 100%;
+      margin-right: 4px;
+    }
+  }
+  .div-3-discover {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 100%) {
+    .div-3-discover {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column-discover {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 0px;
+  }
+  @media (max-width: 100%) {
+    .column-discover {
+      width: 100%;
+    }
+  }
+  .div-4-discover {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  @media (max-width: 100%) {
+    .div-4-discover {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-5-discover {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 100%) {
+    .div-5-discover {
+      max-width: 100%;
+    }
+  }
+  .div-6-discover {
+    display: flex;
+    flex-direction: column;
+    color: var(--Text-primary, #000);
+  }
+  @media (max-width: 100%) {
+    .div-6-discover {
+      max-width: 100%;
+    }
+  }
+  .div-7-discover {
+    text-align: left;
+    font: 600 16px/150% Roboto, sans-serif;
+  }
+  @media (max-width: 100%) {
+    .div-7-discover {
+      max-width: 100%;
+    }
+  }
+  .div-8-discover {
+    display: flex;
+    margin-top: 16px;
+    flex-direction: column;
+  }
+  @media (max-width: 100%) {
+    .div-8-discover {
+      max-width: 100%;
+    }
+  }
+  .div-9-discover {
+    font: 700 48px/58px Roboto, sans-serif;
+  }
+  @media (max-width: 100%) {
+    .div-9-discover {
+      max-width: 100%;
+      font-size: 40px;
+      line-height: 54px;
+    }
+  }
+  .div-10-discover {
+    margin-top: 24px;
+    font: 400 18px/27px Roboto, sans-serif;
+  }
+  @media (max-width: 100%) {
+    .div-10-discover {
+      max-width: 100%;
+    }
+  }
+  .div-11-discover {
+    margin-top: 32px;
+    padding: 8px 0;
+  }
+  @media (max-width: 100%) {
+    .div-11-discover {
+      max-width: 100%;
+    }
+  }
+  .div-12-discover {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 100%) {
+    .div-12-discover {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .div-13-discover {
+    display: flex;
+    flex-grow: 1;
+    padding-top: 64px;
+    flex-direction: column;
+    color: var(--Text-primary, #000);
+    font-weight: 800;
+  }
+  @media (max-width: 100%) {
+    .div-13-discover {
+      margin-top: 32px;
+    }
+  }
+  .div-14-discover {
+    font: 20px/140% Montserrat, sans-serif;
+  }
+  .div-15-discover {
+    margin-top: 16px;
+    font: 16px/24px Roboto, sans-serif;
+  }
+  .column-2-discover {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 20px;
+  }
+  @media (max-width: 100%) {
+    .column-2-discover {
+      width: 100%;
+    }
+  }
+  .div-16-discover {
+    display: flex;
+    padding-top: 64px;
+    flex-direction: column;
+    color: var(--Text-primary, #000);
+    font-weight: 800;
+  }
+  @media (max-width: 100%) {
+    .div-16-discover {
+      margin-top: 32px;
+    }
+  }
+  .div-17-discover {
+    font: 20px/140% Montserrat, sans-serif;
+  }
+  .div-18-discover {
+    margin-top: 16px;
+    font: 16px/24px Roboto, sans-serif;
+  }
+  .div-19-discover {
+    padding-top: 16px;
+    align-items: start;
+    align-self: start;
+    display: flex;
+    margin-top: 24px;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 150%;
+    justify-content: space-between;
+  }
+  .div-20-discover {
+    font-family: Roboto, sans-serif;
+    justify-content: center;
+    border-radius: 75px;
+    border-color: rgba(199, 217, 255, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: var(--Color-Neutral-black, #000);
+    color: var(--light-blue, #c7d9ff);
+    padding: 12px 24px;
+  }
+  @media (max-width: 100%) {
+    .div-20-discover {
+      padding: 0 20px;
+    }
+  }
+  
+  .div-21-discover {
+    justify-content: center;
+    border-radius: 75px;
+    display: flex;
+    margin-top: 12px;
+    gap: 8px;
+    color: var(--Text-primary, #000);
+  }
+  .div-22-discover {
+    font-family: Roboto, sans-serif;
+  }
+  .column-3-discover {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 30%;
+    margin-left: 20px;
+  }
+  @media (max-width: 100%) {
+    .column-3-discover {
+      width: 100%;
+    }
+  }
+  .img-discover {
+    aspect-ratio: 0.96;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+  }
+  @media (max-width: 100%) {
+    .img-discover {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }

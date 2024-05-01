@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Selection Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>University Selection Quiz</h1>
+    <form id="quizForm">
+      <fieldset id="academic-interests">
+        <legend>Academic Interests and Strengths</legend>
+        <label for="subjects">What subjects or fields are you most passionate about or excel in?</label>
+        <textarea id="subjects" name="subjects" rows="4" cols="50"></textarea><br>
+
+        <label for="interests">Are there any specific areas of study you have a keen interest in exploring further?</label>
+        <textarea id="interests" name="interests" rows="4" cols="50"></textarea><br>
+      </fieldset>
+
+      <!-- Add more fieldsets for other sections -->
+
+      <div class="pagination">
+        <button type="button" onclick="prevPage()">Previous</button>
+        <button type="button" onclick="nextPage()">Next</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
