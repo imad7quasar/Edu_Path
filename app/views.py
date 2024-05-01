@@ -23,3 +23,30 @@ def get_university_by_name(request, university_name):
     else:
         # Return an error response for unsupported HTTP methods
         return JsonResponse({'error': 'Method not allowed'}, status=405)
+
+
+def search_universities(request):
+    query = request.GET.get('query')
+    if query:
+        universities = University.objects.filter(university_name__icontains=query)
+        universities_json = [{
+            'name': university.university_name,
+            'location': university.university_location,
+            'image': university.university_image
+        } for university in universities]
+        return JsonResponse(universities_json, safe=False)
+    else:
+        return JsonResponse([], safe=False)  # Return empty response if query is empty
+
+
+
+# views.py
+
+from django.shortcuts import render
+
+def universities_view(request):
+    # You can add any context data you want to pass to the template here
+    context = {
+        # Add context data if needed
+    }
+    return render(request, 'universities.html', context)

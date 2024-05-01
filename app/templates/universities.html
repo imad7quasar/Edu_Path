@@ -2,9 +2,8 @@
 
 <!DOCTYPE html>
 <html>
-
 <head>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/universities.css' %}">
+    <link rel="stylesheet" type="text/css" href="/static/css/universities.css?{% now "U" %}">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
 
@@ -16,15 +15,47 @@
     <div class="search-bar">
         <i class="bi bi-search"></i>
         <input type="text" placeholder="Search...">
-        <button class="myButtonStyle">Search</button>
-    </div>
-    <div class="rectangles_div">
-        <div class="rectangle">Filter by Admission Criteria</div>
-        <div class="rectangle">Filter by Programs</div>
-        <div class="rectangle">Filter by Ranking</div>
-        <div class="rectangle">Filter by Location</div>
-    </div>
+        <button class="myButtonStyle" id="searchButton">Search</button>
+</div>
+<div class="rectangles_div">
+    <div class="rectangle">Filter by Admission Criteria</div>
+    <div class="rectangle">Filter by Programs</div>
+    <div class="rectangle">Filter by Ranking</div>
+    <div class="rectangle">Filter by Location</div>
+</div>
+<div class="ResultSearch" id="searchResult" >
+</div>
 
+<script>
+   document.getElementById("searchButton").addEventListener("click", function() {
+    var query = document.querySelector(".search-bar input").value;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", `/search/?query=${query}`, true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            var response = JSON.parse(xhr.responseText);
+            displaySearchResults(response);
+        }
+    };
+    xhr.send();
+});
+
+function displaySearchResults(results) {
+    var searchResultsContainer = document.getElementById("searchResult");
+    searchResultsContainer.innerHTML = ""; // Clear previous results
+
+    if (results.length > 0) {
+        results.forEach(function(result) {
+            var cardHTML = generateSearchResult(result);
+            searchResultsContainer.innerHTML += cardHTML;
+        });
+    } else {
+        searchResultsContainer.innerHTML = "<p>No results found.</p>";
+    }
+}
+</script>
+
+    </div>
     <p style="margin-top: 50px;">Let's</p>
     <h1>Find Your Perfect University</h1>
     <p>Explore universities and career paths</p>
@@ -187,6 +218,19 @@
         </div>
     `;
     }
+    function generateSearchResult(suggestion) {
+    return `
+    <div class="card" onclick="window.location='/universities/${encodeURIComponent(suggestion.name)}/';" style="cursor: pointer;">
+        <div class="suggestions_img_div">
+            <img id="suggestions_img" src="${suggestion.image}" alt="${suggestion.name}">
+        </div>
+        <h3>${suggestion.name}</h3>
+        <p>${suggestion.location}</p>
+        <a href="/universities/${encodeURIComponent(suggestion.name)}/">Learn More &gt;</a>
+    </div>
+    `;
+}
+
 
     // Get the container for the cards
     var container = document.getElementById('university-suggestions');

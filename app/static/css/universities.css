@@ -61,9 +61,18 @@ body {
 
 .suggestions-courses {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     margin: 10px 0;
+    /* This adds a 10px margin to the top and bottom of each element */
+}
+.ResultSearch {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 100px 0;
     /* This adds a 10px margin to the top and bottom of each element */
 }
 
@@ -154,3 +163,4 @@ section {
 .go {
     padding: 2%;
 }
+
