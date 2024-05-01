@@ -1,89 +1,383 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduPath - Unlock Your Potentials</title>
-    <link rel="stylesheet" href="static/style.css">
-</head>
-<body>
-    <header class="header">
-        <!-- Navigation bar goes here -->
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Universities</a></li>
-                <!-- Add more navigation links as needed -->
-            </ul>
-        </nav>
-    </header>
-<br><br><br>
-    <main>
-        <!-- Home Banner -->
-        <section class="home-banner">
-            <div class="banner-content">
-                <h1>Welcome to EduPath</h1>
-                <p>Unlock your potentials with our educational platform.</p>
-                <a href="#" class="cta-button">Get Started</a>
-            </div>
-        </section>
-<br><br><br>
-        <!-- FAQ Section -->
-        <section class="faq-section">
-            <div class="section-content">
-                <h2>FAQ</h2>
-                <!-- FAQ content goes here -->
-            </div>
-        </section>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-        <!-- Testimonial Section -->
-        <section class="testimonial-section">
-            <div class="section-content">
-                <h2>Testimonials</h2>
-                <!-- Testimonial content goes here -->
+    
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=New Rocker:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="quiz">
+      <h1 class="u">U</h1>
+      <header class="content-wrapper">
+        <div class="navbar-3">
+          <div class="container">
+            <div class="column">
+              <div class="column1">
+                <a href="/landing.html" class="link-one">Home</a>
+                <a href="/about" class="link-two">About Us</a>
+                <div class="nav-link-dropdown">
+                  <a href="/universities" class="link-three dropdown-toggle">Universities</a>
+                  <div class="dropdown-content">
+                      <a href="/StartQuiz">QuizMatcher</a>
+                      <a href="/contactus">Contact Us</a>
+                      
+                  </div>
+                  <div class="chevron-down">
+                      <img class="vector-icon" alt="" src="./public/vector.svg" />
+                  </div>
+              </div>
+              </div>
             </div>
-        </section>
-<br><br><br>
-        <!-- Call to Action Section -->
-        <section class="cta-section">
-            <div class="section-content">
-                <h2>Join Us Today</h2>
-                <!-- CTA content goes here -->
+            <div class="content">
+              <img
+                class="company-logo-icon"
+                alt=""
+                src="./public/company-logo.svg"
+              />
             </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <!-- Footer content goes here -->
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Cookies Settings</a>
-                <!-- Add more footer links as needed -->
+            <div class="column2">
+              <div class="button">
+                <b class="button1">Register</b>
+              </div>
             </div>
-            <div class="contact-info">
-                <p>Mhalema St.</p>
-                <p>SidiAbdellah, Alger, Algeria</p>
-                <p>Contact: 055123 4567</p>
-                <p>Email: edupath@info.com</p>
-                <!-- Add more contact information as needed -->
-            </div>
-            <div class="social-media">
-                <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="img/linkedin.png" alt="LinkedIn"></a>
-                <a href="#"><img src="img/youtube.png" alt="YouTube"></a>
-                <!-- Add more social media links as needed -->
+          </div>
+        </div>
+        <div class="edu-parent">
+          <div class="edu">Edu</div>
+          <div class="path">Path</div>
+          <img
+            class="mask-group-icon"
+            alt=""
+            src="./public/mask-group@2x.png"
+          />
+        </div>
+        <img
+          class="content-wrapper-child"
+          alt=""
+          src="./public/frame-1000001888.svg"
+        />
+      </header>
+      <section class="frame-wrapper">
+        <div class="frame" data-animate-on-scroll>
+          <div class="welcome-to-your-container">
+            <p class="welcome-to-your-path-finder-qu">
+              <span>
+                <span class="welcome-to-your"
+                  >Welcome to Your Path Finder Quiz!</span
+                >
+              </span>
+            </p>
+            <p class="blank-line">
+              <span>
+                <b>&nbsp;</b>
+              </span>
+            </p>
+            <p class="discover-the-future">
+              Discover the future that awaits you. This isn't just any quiz—it's
+              the first step on a journey to uncover your ideal academic path
+              and connect you with opportunities you've been dreaming of. Each
+              question is designed to understand your interests, strengths, and
+              aspirations, guiding you towards a destination that feels like it
+              was meant just for you.
+            </p>
+            <p class="are-you-ready">
+              Are you ready to unveil the possibilities? Your future starts now.
+              Let's embark on this journey together.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="question-container-wrapper">
+        <div class="question-container" data-animate-on-scroll>
+            <div class="question-content">
+                <!-- Rectangle image displayed at the top of the question content -->
+                <img class="question-content-child" alt="" src="./public/rectangle-2.svg">
+                <div class="what-area-of-study-interests-y-wrapper">
+                    <p class="quest"></p> <!-- Question text -->
+                    <p class="disc"></p> <!-- Description text -->
+                </div>
+                <div class="button-options-parent">
+                    <div class="frame7">
+                        <!-- Dynamic buttons will be injected here -->
+                    </div>
+                    <div class="navigation-buttons">
+                      <button class="button7">Previous</button> <!-- Button for navigating to the previous question -->
+                      <button class="button9">Next</button> <!-- Button for navigating to the next question -->
+                  </div>
+                </div>
+                <!-- Navigation buttons placed right after the options -->
+                
             </div>
         </div>
-        <p class="copyright">© 2024 EduPath. All rights reserved.</p>
-    </footer>
+    </section>
+    
+    
+      <footer class="profile-icon">
+        <div class="footer-11">
+          <div class="card">
+            <div class="column3">
+              <img
+                class="company-logo-icon1"
+                alt=""
+                src="./public/company-logo.svg"
+              />
+
+              <div class="content1">
+                <div class="content2">
+                  <div class="address">Mhalema St.</div>
+                  <div class="level-1-12">SidiAbdellah, Alger, Algeria</div>
+                </div>
+                <div class="content3">
+                  <div class="contact">Contact:</div>
+                  <div class="container5">
+                    <a class="email-address" href="tel:+213551234567"
+                      >055123 4567</a
+                    >
+                    <a class="inforelumeio" href="mailto:edupath@gmail.com"
+                      >edupath@info.com</a
+                    >
+                  </div>
+                </div>
+                <div class="social-links">
+                  <img
+                    class="icon-facebook"
+                    loading="lazy"
+                    alt=""
+                    src="./public/icon--facebook.svg"
+                  />
+
+                  <img
+                    class="icon-instagram"
+                    loading="lazy"
+                    alt=""
+                    src="./public/icon--instagram.svg"
+                  />
+
+                  <img
+                    class="icon-x"
+                    loading="lazy"
+                    alt=""
+                    src="./public/icon--x.svg"
+                  />
+
+                  <img
+                    class="icon-linkedin"
+                    loading="lazy"
+                    alt=""
+                    src="./public/icon--linkedin.svg"
+                  />
+
+                  <img
+                    class="icon-youtube"
+                    loading="lazy"
+                    alt=""
+                    src="./public/icon--youtube.svg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="column4">
+              <div class="link-list">
+                <div class="link-one1">About Us</div>
+                
+                <div class="link-three1">Contact Us</div>
+                <div class="link-four">FAQ</div>
+                
+              </div>
+              <div class="link-list1">
+                <div class="link-six"></div>
+                <div class="link-seven"></div>
+                <div class="link-eight"></div>
+                <div class="link-nine"></div>
+                <div class="link-ten"></div>
+              </div>
+            </div>
+          </div>
+          <div class="credits">
+            <div class="row">
+              <div class="relume-all-rights">
+                © 2024 EduPath. All rights reserved.
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="path-edu-branding">
+          <h1 class="path1">Path</h1>
+          <h1 class="edu1">Edu</h1>
+          <img
+            class="mask-group-icon1"
+            alt=""
+            src="./public/mask-group@2x.png"
+          />
+        </div>
+      </footer>
+    </div>
 
     <script>
-        // Add your JavaScript code here
-    </script>
-</body>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+       
+      </script>
+      <script>
+        // Define the quiz questions and control variables.
+        const quizQuestions = [
+          {
+            question: "What area of study interests you the most?",
+            description: "Understanding your academic interests helps us tailor your journey towards a future filled with passion and success. Choose the option that resonates with you the most.",
+            answers: ["Engineering and Technology", "Sciences", "Arts and Humanities", "Social Sciences"]
+          },
+          {
+            question: "What is  your baccalaureate degree stream?",
+            description: "To know more about your educational background.",
+            answers: ["Mathematics", "Science", "Technical Mathematics", "Foreign Languages", "Arabic Literature"]
+          },
+          {
+  question: "What subjects are you most  excel in Bac?",
+  description: "Identifying your strengths can guide you to a major that will both challenge and fulfill you.",
+  answers: ["Sciences", "Mathematics", "Physics", "Technical and Engineering", "Arts and Design","Litrature","Languages"]
+},
+{
+  question: "What are your career aspirations or long-term goals?",
+  description: "Understanding your career goals helps us suggest a path that aligns with your professional aspirations.",
+  answers: ["Healthcare Professional", "Engineer", "Business Leader", "Academic or Researcher", "Artist or Designer"]
+},
+
+{
+  question: "Are you open to studying in a different city or region, or do you prefer to stay close to home?",
+  description: "Your willingness to relocate can affect your choice of university and the opportunities available to you.",
+  answers: ["Open to relocation", "Prefer to stay close to home", "Flexible, depends on the university", "Only major cities"]
+},
+{
+  question: "How important are factors such as academic advising, career counseling, and student support services to you?",
+  description: "The availability of support services can enhance your academic experience and assist with future career planning.",
+  answers: ["Very important", "Somewhat important", "Neutral", "Not very important", "Not important at all"]
+},
+{
+  question: "Are you interested in participating in extracurricular activities or joining student clubs and organizations?",
+  description: "Campus life and extracurricular activities can play a crucial role in your personal and professional development.",
+  answers: ["Yes, very interested", "Somewhat interested", "Only if relevant to my studies", "Not interested at all"]
+},
+{
+  question: "What are your financial constraints or preferences when it comes to tuition fees, scholarships, and financial aid packages?",
+  description: "Financial considerations are critical in planning for university, affecting where and what you can study.",
+  answers: ["Need significant financial aid", "Looking for moderate scholarships", "Small financial aid is sufficient", "Financially flexible", "Not a consideration"]
+},
+{
+  question: "Do you have a specific major or specialization in mind, or are you still exploring your options?",
+  description: "Knowing whether you've already decided on a major or are still exploring can help tailor our recommendations.",
+  answers: ["Already decided", "Narrowed down a few options", "Exploring broadly", "Looking for suggestions", "Undecided"]
+}
+
+          
+        ];
+      
+        let currentQuestionIndex = 0;
+      
+        // Function to display the current question and its options.
+        function displayQuestion() {
+          const questionInfo = quizQuestions[currentQuestionIndex];
+          document.querySelector('.quest').textContent = questionInfo.question;
+          document.querySelector('.disc').textContent = questionInfo.description;
+      
+          const optionsContainer = document.querySelector('.frame7');
+          optionsContainer.innerHTML = '';
+          questionInfo.answers.forEach((answer, index) => {
+            const buttonHtml = `<button class="radio" onclick="selectOption(this)" id="${index}">${answer}</button>`;
+            optionsContainer.innerHTML += buttonHtml;
+          });
+        }
+      
+        function selectOption(selectedButton) {
+    // Get all buttons with the class 'radio' inside the 'frame7' div
+    const buttons = document.querySelectorAll('.frame7 .radio');
+
+    // Loop through all buttons and remove the 'radio-selected' class
+    buttons.forEach(button => {
+        button.classList.remove('radio-selected');
+    });
+
+    // Add the 'radio-selected' class to the button that was clicked
+    selectedButton.classList.add('radio-selected');
+}
+
+      
+        // Navigation functions for the quiz.
+        function goToNextQuestion() {
+          if (currentQuestionIndex < quizQuestions.length - 1) {
+            currentQuestionIndex++;
+            displayQuestion();
+          } else {
+            alert("This is the last question.");
+          }
+        }
+      
+        function goToPreviousQuestion() {
+          if (currentQuestionIndex > 0) {
+            currentQuestionIndex--;
+            displayQuestion();
+          } else {
+            alert("This is the first question.");
+          }
+        }
+      
+        // Scroll animation setup.
+        document.addEventListener('DOMContentLoaded', function() {
+          var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+          var observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting || entry.intersectionRatio > 0) {
+                  entry.target.classList.add("animate");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            {
+              threshold: 0.15
+            }
+          );
+      
+          scrollAnimElements.forEach(element => observer.observe(element));
+      
+          // Setup initial display and bind navigation buttons.
+          displayQuestion();
+          document.querySelector('.button9').addEventListener('click', goToNextQuestion);
+          document.querySelector('.button7').addEventListener('click', goToPreviousQuestion);
+        });
+        function selectOption(selectedButton) {
+            const buttons = document.querySelectorAll('.frame-div .radio');
+            buttons.forEach(button => button.classList.remove('radio-selected'));
+            selectedButton.classList.add('radio-selected');
+        }
+      </script>
+      
+  </body>
 </html>
