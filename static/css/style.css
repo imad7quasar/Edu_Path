@@ -37,10 +37,10 @@ a {
 ============================================================================================ */
 .home_banner_area {
   z-index: 1;
-  min-height: 900px;
+  min-height: 1000px;
   position: relative;
   background: url(../img/home_banner.png) no-repeat center;
-  background-size: cover;
+  background-size: cover; /* Ensure background image covers the entire section */
 }
 
 .home_banner_area .banner_inner {
@@ -67,13 +67,12 @@ a {
   text-align: center; /* Center align text */
 }
 
-.home_banner_area .banner_inner .button
-{
-color: #00070e;
-background-color: #00234700;
-font-size: 20px;
-border-radius: 30px;
-font-weight: 500; /* Corrected font weight */
+.home_banner_area .banner_inner .button {
+  color: #00070e;
+  background-color: #00234700;
+  font-size: 20px;
+  border-radius: 30px;
+  font-weight: 500; /* Corrected font weight */
 }
 
 
@@ -84,7 +83,7 @@ font-weight: 500; /* Corrected font weight */
 ============================================================================================ */
 .home_banner_area2 {
   z-index: 1;
-  min-height: 900px;
+  min-height: 800px;
   position: relative;
   background: url(../img/banner2.png) no-repeat center;
   background-size: cover;
@@ -115,17 +114,19 @@ font-weight: 500; /* Corrected font weight */
   color: #002347;
   font-weight: 500;
 }
-
 .widget-container {
   display: flex;
-  margin: 0px;
-  justify-content: space-between; /* Adjust as needed */
+  justify-content: space-between; /* Distribute items evenly */
 }
 
 .widget {
-  width: calc(33.33% - 20px); /* Adjust width and margin as needed */
   text-align: center;
-  margin-bottom: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.widget-icon {
+  /* Add styles for icon container if needed */
 }
 
 .widget-title {
@@ -135,26 +136,23 @@ font-weight: 500; /* Corrected font weight */
 }
 
 .widget-content {
-  font-size: 10px;
+  font-size: 16px;
   margin-bottom: 20px;
-  width: 80%; /* Adjust width as needed */
-  margin: 0 auto; /* Center the content */
 }
 
 .widget-button {
   padding: 10px 20px;
-  background-color: #007bff; /* Button background color */
-  color: #fff; /* Button text color */
-  border: none;
-  border-radius: 20px;
-  font-size: 16px;
+  background-color: #007bff00;
+  color: #000000;
+  border-radius: 30px;
+  
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .widget-button:hover {
-  background-color: #0056b3; /* Button background color on hover */
+  background-color: #0056b3;
 }
+
 
 /* End Home Banner Area css
 ============================================================================================ */
