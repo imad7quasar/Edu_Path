@@ -1,0 +1,216 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/universities.css' %}">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
+
+
+</head>
+
+<body>
+    <h1>Search for Universities or programs</h1>
+    <div class="search-bar">
+        <i class="bi bi-search"></i>
+        <input type="text" placeholder="Search...">
+        <button class="myButtonStyle">Search</button>
+    </div>
+    <div class="rectangles_div">
+        <div class="rectangle">Filter by Admission Criteria</div>
+        <div class="rectangle">Filter by Programs</div>
+        <div class="rectangle">Filter by Ranking</div>
+        <div class="rectangle">Filter by Location</div>
+    </div>
+
+    <p style="margin-top: 50px;">Let's</p>
+    <h1>Find Your Perfect University</h1>
+    <p>Explore universities and career paths</p>
+    <div class="suggestions" id="university-suggestions">
+    </div>
+    <button class="myButtonStyle" id="view_all_btn">View All</button>
+
+
+    <h1 style="margin-top: 50px;">Explore Majors and Programs</h1>
+    <p>Find the perfect program for your future</p>
+
+    <div class="suggestions-courses" id="university-suggestions-courses">
+
+    </div>
+    <button class="myButtonStyle" id="view_all_btn">View All</button>
+
+
+    <div class="AI_">
+        <div class="go">
+            <section class="intro">
+                <h2>Discover Your Options</h2>
+                <p>Easily search and explore universities based on programs offered, ranking, campus life, admissions
+                    criteria,
+                    and take virtual tours to get a feel for the campus.</p>
+            </section>
+
+            <section class="career-paths">
+                <h2>Plan Your Future</h2>
+                <p>Explore career paths, job outlooks, necessary education, and related skills to make well-informed
+                    decisions
+                    about your future.</p>
+            </section>
+
+            <section class="find-university">
+                <h2>Find Your Fit</h2>
+                <p>Use search filters, interactive maps, and engaging visuals like photos and videos to find the perfect
+                    university that matches your preferences and goals.</p>
+            </section>
+        </div>
+        <div>
+            <img src="ai.png" alt="AI">
+        </div>
+    </div>
+
+
+
+
+</body>
+
+<script>
+    // Your data object
+    var data = {
+        name: "University Name",
+        image: "./university.png",
+        description: "University description",
+        fieldsAndSpecialities: "Fields and specialities",
+        location: "Location",
+        googleMaps: "Google Maps link",
+        ranking: "Ranking",
+        contacts: {
+            email: "ggg",
+            phone: "Phone",
+            website: "Website"
+        },
+        suggestions: [
+            {
+                name: "Suggested University 1",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc6aAGBQoOyitnUaLmHxF-AX4HUS8Q8evAVJnucutd2M-fvFGOC13ok3e3xOuxfmcK2rQ&usqp=CAU",
+                location: "Location 1"
+            },
+            {
+                name: "Suggested University 2",
+                image: "https://cdn.37degres.dz/wp-content/uploads/2022/09/img_4832-960x640.jpg",
+                location: "Location 2"
+            },
+            {
+                name: "Suggested University 2",
+                image: "https://cdn.37degres.dz/wp-content/uploads/2022/09/img_4832-960x640.jpg",
+                location: "Location 2"
+            },
+            {
+                name: "Suggested University 2",
+                image: "https://cdn.37degres.dz/wp-content/uploads/2022/09/img_4832-960x640.jpg",
+                location: "Location 2"
+            },
+            {
+                name: "Suggested University 2",
+                image: "https://cdn.37degres.dz/wp-content/uploads/2022/09/img_4832-960x640.jpg",
+                location: "Location 2"
+            },
+            {
+                name: "Suggested University 1",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc6aAGBQoOyitnUaLmHxF-AX4HUS8Q8evAVJnucutd2M-fvFGOC13ok3e3xOuxfmcK2rQ&usqp=CAU",
+                location: "Location 1"
+            },
+            {
+                name: "Suggested University 2",
+                image: "https://cdn.37degres.dz/wp-content/uploads/2022/09/img_4832-960x640.jpg",
+                location: "Location 2"
+            },
+            {
+                name: "Suggested University 2",
+                image: "https://cdn.37degres.dz/wp-content/uploads/2022/09/img_4832-960x640.jpg",
+                location: "Location 2"
+            },
+            {
+                name: "Suggested University 2",
+                image: "https://cdn.37degres.dz/wp-content/uploads/2022/09/img_4832-960x640.jpg",
+                location: "Location 2"
+            },
+            {
+                name: "Suggested University 2",
+                image: "https://cdn.37degres.dz/wp-content/uploads/2022/09/img_4832-960x640.jpg",
+                location: "Location 2"
+            },
+        ]
+    };
+
+    var data_courses = {
+        name: "University Name",
+        image: "./university.png",
+        description: "University description",
+        fieldsAndSpecialities: "Fields and specialities",
+        location: "Location",
+        googleMaps: "Google Maps link",
+        ranking: "Ranking",
+        contacts: {
+            email: "ggg",
+            phone: "Phone",
+            website: "Website"
+        },
+        suggestions: [
+            {
+                name: "Suggested COURSE 1",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc6aAGBQoOyitnUaLmHxF-AX4HUS8Q8evAVJnucutd2M-fvFGOC13ok3e3xOuxfmcK2rQ&usqp=CAU",
+                location: "Location 1"
+            },
+            {
+                name: "Suggested COURSE 2",
+                image: "https://cdn.37degres.dz/wp-content/uploads/2022/09/img_4832-960x640.jpg",
+                location: "Location 2"
+            },
+
+
+        ]
+    };
+
+
+
+    // Function to generate HTML for a card
+    function generateCardHTML(suggestion) {
+        return `
+        <div class="card">
+            <div class="suggestions_img_div">
+                <img id="suggestions_img" src="${suggestion.image}" alt="${suggestion.name}">
+            </div>
+            <h3>${suggestion.name}</h3>
+            <p>${suggestion.location}</p>
+            <a href="#">Learn More &gt;</a>
+        </div>
+    `;
+    }
+
+    // Get the container for the cards
+    var container = document.getElementById('university-suggestions');
+
+    // Clear the container
+    container.innerHTML = '';
+
+    // Generate and add the HTML for each card
+    data.suggestions.forEach(function (suggestion) {
+        var cardHTML = generateCardHTML(suggestion);
+        container.innerHTML += cardHTML;
+    });
+
+    // Get the container for the cards
+    var container_courses = document.getElementById('university-suggestions-courses');
+
+    // Clear the container
+    container_courses.innerHTML = '';
+
+    // Generate and add the HTML for each card
+    data_courses.suggestions.forEach(function (suggestion) {
+        var cardHTML = generateCardHTML(suggestion);
+        container_courses.innerHTML += cardHTML;
+    });
+</script>
+
+</html>
