@@ -1,0 +1,172 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: blue;
+  color: white;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+}
+
+.main {
+  padding: 20px;
+}
+
+.footer {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-media img {
+  width: 30px;
+  margin: 0 5px;
+}
+/* Section Styles */
+/* Section Styles */
+.home-banner {
+  background-image: url('../img/home_banner.png');
+  background-size: cover; /* Set background size to cover */
+  background-position: center;
+  color: white;
+  height: 500px; /* Replace 300px with the actual height of your image */
+  padding: 200px 0;
+  text-align: center;
+}
+
+.banner-content h1 {
+  margin: 0;
+}
+
+.banner-content p {
+  margin-top: 20px;
+}
+
+.cta-button {
+  background-color: white;
+  color: blue;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  border-color: black;
+
+
+}
+
+
+.testimonial-section
+{
+  background-image: url('../img/banner2.png');
+  background-size: cover; /* Set background size to cover */
+  background-position: center;
+  color: white;
+  height: 500px; /* Replace 300px with the actual height of your image */
+  padding: 50px 0;
+  text-align: center;
+}
+.cta-section {
+  background-color: blue;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+/* FAQ Section Styles */
+/* FAQ Section Styles */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-item {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.question {
+  background-color: #f2f2f2;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  flex: 1;
+  order: 1; /* Ensure questions are on the left */
+}
+
+.answer {
+  padding: 10px;
+  display: none;
+  flex: 1;
+  order: 2; /* Ensure answers are on the right */
+}/* CSS Styles */
+.group-36487 {
+  display: flex;
+  justify-content: space-between; /* Arrange items with space between them */
+  align-items: center; /* Center items vertically */
+}
+
+.sign-up {
+  flex: 1; /* Take up all available space in the flex container */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.frame-1000001884 {
+  background-color: #f2f2f2; /* Background color for the form container */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.form {
+  display: flex;
+  flex-direction: column; /* Arrange form elements in a column */
+}
+
+.input-container {
+  position: relative; /* Ensure relative positioning for absolute positioning of child elements */
+  margin-bottom: 20px; /* Add margin for spacing between input fields */
+}
+
+.input-container img {
+  position: absolute;
+  right: -40px; /* Adjust the value as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px; /* Adjust the width of the image as needed */
+}
+
+.type-default {
+  padding-right: 140px; /* Ensure enough space for the image */
+}
