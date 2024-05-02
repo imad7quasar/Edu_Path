@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Answers</title>
+    <style>
+        /* CSS styles */
+        body {
+          background-color: #fff;
+          font-family: Arial, sans-serif;
+          margin: 50px;
+          padding: 50px;
+        }
+
+        h1 {
+          text-align: center;
+          margin-top: 50px;
+        }
+
+        ul {
+          border: 1px solid black;
+          background: linear-gradient(180deg, #a8c5ff 100%, #dae7ff 100%);
+          list-style-type: none;
+          padding: 100px;
+          margin-top:20px;
+          margin-left: 130px;
+          margin-right: 130px;
+          margin-bottom: 50px;
+        }
+
+        li {
+          border: 1px solid black;
+          border-radius: 4px;
+          padding: 10px;
+          margin-bottom: 40px;
+        }
+
+        label {
+          font-weight: bold;
+          display: block;
+          margin-bottom: 20px;
+        }
+
+        .message {
+          text-align: center;
+          margin-top: 20px;
+          font-style: italic;
+          color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        <p>Thanks for answering the quiz! Please wait for a few seconds while we generate recommended specialties and universities. We appreciate your time!!</p>
+    </div>
+    <h1> Your Quiz Answers</h1>
+   <ul>
+        {% for question, answer in answers.items %}
+            <label>{{ question }}:</label>
+            <li><span>{{ answer }}</span></li>
+        {% endfor %}
+    </ul>
+    
+    <div class="message">
+        <p>Model Result.</p>
+    </div>
+</body>
+</html>

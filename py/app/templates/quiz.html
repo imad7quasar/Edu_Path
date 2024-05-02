@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Quiz</title>
+  <style>
+    /* CSS styles */
+body {
+  background: linear-gradient(180deg, #a8c5ff 100%, #dae7ff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+form {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="text"] {
+  width: calc(100% - 20px); /* Adjust width according to padding */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+  </style>
+</head>
+<body>
+   <form action="{% url 'submit_quiz' %}" method="post">
+    {% csrf_token %}
+    {% for question in questions %}
+        <label for="answer_{{ forloop.counter }}"> {{ question.text }} </label><br>
+        <input type="hidden" name="question_{{ forloop.counter }}" value="{{ question.text }}">
+        <input type="text" name="answer_{{ forloop.counter }}" id="answer_{{ forloop.counter }}" required><br><br>
+    {% endfor %}
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
