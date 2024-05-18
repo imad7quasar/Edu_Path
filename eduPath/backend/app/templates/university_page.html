@@ -1,0 +1,130 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="icon" href="img/favicon.png" type="image/png" />
+        <title>                  Edupath
+        </title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/flaticon.css" />
+        <link rel="stylesheet" href="css/themify-icons.css" />
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+        <!-- main css -->
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css?{% now "U" %}">
+    
+      
+    <link rel="stylesheet" type="text/css" href="/static/css/university_page.css?{% now "U" %}">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+          <div class="navbar-left">
+            <ul>
+              <li><a href="/landing/">Home</a></li>
+              <li><a href="/abts/">About Us</a></li>
+              
+              <li><a href="{% url 'universities' %}">Universities</a></li>
+
+            </ul>
+          </div>
+          <div class="navbar-center">
+<img src="{% static 'img/logo.png' %}" alt="logo">          </div>
+          
+        </nav>
+      </header>
+    <div class="gradient-bg">
+        <h1 id="university-name" style="font-family: 'Space Grotesk', sans-serif; text-align: left; font-size: 70px;">
+            {{ university_data.university_name }}
+        </h1>
+        <div class="univ_pic_div">
+            <img src="{{ university_data.university_image }}" alt="University Picture" id="university-image">
+        </div>
+    </div>
+    <div style="padding: 4%;">
+        <h2>Overview</h2>
+        <div class="info-box">
+            <h3>Description</h3>
+            <p id="university-description">{{ university_data.university_overview }}</p>
+            <h3>Fields and Specialities</h3>
+            <p id="university-fields-specialities">{{ university_data.university_fields }}</p>
+            <h3>Location</h3>
+            <p id="university-location">{{ university_data.university_location }}</p>
+            <p id="university-google-maps"></p>
+            <h3>Ranking</h3>
+            <p id="university-ranking">{{ university_data.university_ranking }}</p>
+            <h3>Contacts</h3>
+            <p id="university-email">{{ university_data.email }}</p>
+            <p id="university-phone">{{ university_data.phone }}</p>
+            <p id="university-website">{{ university_data.website }}</p>
+        </div>
+        <h2 style="text-align: center; font-family: 'Space Grotesk', sans-serif;">Suggestions</h2>
+        <div class="suggestions" id="university-suggestions">
+            <!-- Suggestions will be inserted here by JavaScript -->
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            // Dummy data
+            var data = {
+                suggestions: [
+                    {
+                        name: "Suggested University 1",
+                        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc6aAGBQoOyitnUaLmHxF-AX4HUS8Q8evAVJnucutd2M-fvFGOC13ok3e3xOuxfmcK2rQ&usqp=CAU",
+                        location: "Location 1"
+                    },
+                    {
+                        name: "Suggested University 2",
+                        image: "https://cdn.37degres.dz/wp-content/uploads/2022/09/img_4832-960x640.jpg",
+                        location: "Location 2"
+                    },
+                    {
+                        name: "Suggested University 3",
+                        image: "https://cdn.37degres.dz/wp-content/uploads/2022/09/img_4832-960x640.jpg",
+                        location: "Location 3"
+                    }
+                ]
+            };
+
+            const suggestionsContainer = document.getElementById('university-suggestions');
+            data.suggestions.forEach(suggestion => {
+                const card = document.createElement('div');
+                card.className = 'card';
+
+                const imgDiv = document.createElement('div');
+                imgDiv.className = 'suggestions_img_div';
+                const img = document.createElement('img');
+                img.src = suggestion.image;
+                img.alt = suggestion.name;
+                img.id = 'suggestions_img';
+                imgDiv.appendChild(img);
+                card.appendChild(imgDiv);
+
+                const h3 = document.createElement('h3');
+                h3.innerText = suggestion.name;
+                card.appendChild(h3);
+
+                const p = document.createElement('p');
+                p.innerText = suggestion.location;
+                card.appendChild(p);
+
+                suggestionsContainer.appendChild(card);
+            });
+        };
+    </script>
+</body>
+
+</html>

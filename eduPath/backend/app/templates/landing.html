@@ -1,0 +1,339 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <title>                  Edupath
+    </title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <!-- main css -->
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css?{% now "U" %}">
+
+  </head>
+
+  <body>
+    <header class="header">
+        <nav class="navbar">
+          <div class="navbar-left">
+            <ul>
+              <li><a href="/landing/">Home</a></li>
+              <li><a href="/abts/">About Us</a></li>
+              <li><a href="/contact/">Contact Us</a></li>
+              <li><a href="{% url 'universities' %}">Universities</a></li>
+
+            </ul>
+          </div>
+          <div class="navbar-center">
+<img src="{% static 'img/logo.png' %}" alt="logo">          </div>
+          <div class="navbar-right">
+            <ul class="button-list">
+                <li><a href="/reg/" class="button">Register</a></li>
+                <li><a href="/login/" class="button">Login</a></li>
+              </ul>
+              
+          </div>
+        </nav>
+      </header>
+      
+    <!--================ Start Header Menu Area =================-->
+  
+    <!--================ End Header Menu Area =================-->
+
+    <!--================ Start Home Banner Area =================-->
+    <section class="home_banner_area">
+        <div class="banner_inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="banner_content text-center">
+                  <h2>Discover the perfect major and university with Edupath's AI-powered quiz matcher.</h2>
+                  <a href="/reg/" class="start">Let's get started</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    <!--================ End Home Banner Area =================-->
+      <!--================ Start Home Banner Area =================-->
+      <section class="home_banner_area2">
+        <div class="banner_inner">
+          <div class="container">
+            <div class="row">
+              <div class="widget-container">
+                <div class="col-lg-4">
+                  <div class="widget">
+                    <div class="widget-icon">
+                      <!-- Icon goes here -->
+                    </div>
+                    <h3 class="widget-title">Receive Personalized Recommendations Just for You</h3>
+                    <p class="widget-content">Take our QuizMatcher to find the best major and university that suit your interests and goals. Our AI-powered platform analyzes your answers and provides personalized recommendations based on your unique profile.</p>
+                    <a href="/reg/" class="start">Get started</a>
+
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="widget">
+                    <div class="widget-icon">
+                      <!-- Icon goes here -->
+                    </div>
+                    <h3 class="widget-title">Explore Diverse Major and University Options</h3>
+                    <p class="widget-content">Our comprehensive database includes a wide range of majors and universities, allowing you to explore various options and find the perfect fit for your academic and career aspirations.</p>
+                    <a href="/abts/" class="start">Learn more</a>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="widget">
+                    <div class="widget-icon">
+                      <!-- Icon goes here -->
+                    </div>
+                    <h3 class="widget-title">Connect with Academic Advisors and Experts</h3>
+                    <p class="widget-content">Our platform also provides access to experienced academic advisors and experts who can guide you through the decision-making process, offering valuable insights and advice.</p>
+                    <a href="/reg/" class="start">Sign Up</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--================ End Home Banner Area =================-->
+   
+        
+
+      <div class="banner3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="single_feature">
+                <div class="icon">
+                  <!-- Your image goes here -->
+                  <img src="{% static 'img/banner3.png' %}" alt="Feature Image">
+                </div>
+                <h4>Personalized recommendations and insights for your future</h4>
+                <p>Edupath offers a unique approach to academic and career planning, utilizing AI technology to provide personalized recommendations and insights. Whether you're unsure about your major or looking for the perfect university, our quizmatcher will help you make well-informed decisions.</p>
+                <!-- Buttons -->
+                <div class="buttons">
+                  <a href="/abts/" class="start">Learn more</a>
+                  <a href="/reg/" class="start">Sign Up</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!--================ Start Nos Services =================-->
+       <div class="banner4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="single_feature">
+                <div class="icon">
+                  <!-- Your image goes here -->
+                </div>
+                <h4>Happy Student</h4>
+                <p>Take the QuizMatcher quiz to find the best major and university for you.</p>
+                <!-- Buttons -->
+                <div class="col-md-6">
+                    <div class="reviews-widget">
+                      <div class="scroll-arrow left-arrow">&lt;</div>
+                      <div class="reviews-container">
+                        <div class="review">
+                          <h5>Samir Malek</h5>
+                          <p>Such a great platform !</p>
+                        </div>
+                        <div class="review">
+                          <h5>Nadir Amouche</h5>
+                          <p>I could perfectly find the suitable path of education</p>
+                        </div>
+                        <div class="review">
+                          <h5>Layla Nancy</h5>
+                          <p>It helps alot, especialy when you dont enough infos  </p>
+                        </div>
+                        <div class="review">
+                            <h5>Amina Lerkased</h5>
+                            <p>I trusted this Edu path and didnt regret it </p>
+                          </div>
+                          
+                        <!-- Add more reviews here -->
+                      </div>
+                      <div class="scroll-arrow right-arrow">&gt;</div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+      
+    <!--================ End Feature Area =================-->
+    <!--================ Start Nos Services =================-->
+    <div class="banner5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="single_feature">
+                <div class="icon">
+                  <!-- Your image goes here -->
+                </div>
+                <h4>Discover Your Perfect Path</h4>
+                <p>Take the QuizMatcher quiz to find the best major and university for you.</p>
+                <!-- Buttons -->
+                <div class="buttons">
+                    <a href="/abts/" class="start">Learn more</a>
+                    <a href="/reg/" class="start">Start</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--================ End Feature Area =================-->
+
+    <!--================ Start Popular Courses Area =================-->
+    <div class="banner6">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-5">
+              <div class="main_title">
+                <h2>Frequently Asked Questions</h2>
+                <p class="small-text">Here are some commonly asked questions:</p>
+                <div class="faq-widget">
+                  <div class="faq-column">
+                    <div class="faq-item">
+                      <h4 class="question"><i class="fas fa-plus"></i>Whar are the top 5 universities in Algeria ?</h4>
+                      <p class="answer">ENSIA, ESI ALGIERS , ESI BEDJAIA , NHSM , POLYTECH</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 class="question"><i class="fas fa-plus"></i>The Avreage for ENSIA 2022  ?</h4>
+                        <p class="answer">Math : 17.73 , SC : 18.20 , MathTech : 18.33</p>
+                      </div>
+                      <div class="faq-item">
+                        <h4 class="question"><i class="fas fa-plus"></i>Universities That has Ai as a speciality</h4>
+                        <p class="answer">ENSIA, ESI , POLYTECH</p>
+                      </div>
+                    <div class="faq-item">
+                      <h4 class="question"><i class="fas fa-plus"></i>MEDICINE or ESI ?</h4>
+                      <p class="answer">It depends on the personal choice</p>
+                    </div>
+                    <!-- Add more questions and answers here -->
+                  </div>
+                  <div class="faq-column">
+                    <div class="faq-item">
+                      <h4 class="question"><i class="fas fa-plus"></i>Avreage from MEDICINE 2022 ?</h4>
+                      <p class="answer">MATH : 16 , SC : 15.50 , MathTech : 17</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 class="question"><i class="fas fa-plus"></i>Is Edu path free ?</h4>
+                        <p class="answer">Yes it free and open to every student</p>
+                      </div>
+                      <div class="faq-item">
+                        <h4 class="question"><i class="fas fa-plus"></i>How can contact Edu Path team ?</h4>
+                        <p class="answer">via the emil : edupath@gmail.com</p>
+                      </div>
+                    <div class="faq-item">
+                      <h4 class="question"><i class="fas fa-plus"></i>Who developed Edu Path ?</h4>
+                      <p class="answer">Smart guys from ENSIA</p>
+                    </div>
+                    <!-- Add more questions and answers here -->
+                  </div>
+                </div>
+                <h2>Still have Questions ?</h2>
+
+
+                <a href="/conntact/" class="start">Contact us </a>
+                <br>
+                <br>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    <!--================ End Popular Courses Area =================-->
+
+    <!--================ End Registration Area =================-->
+<br><br>
+    <!--================ Start footer Area  =================-->
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6">
+                  <!-- Location and contact info -->
+                  <div class="location-info">
+                      <p>Mahelma , Algiers ,Algeria</p>
+                      <p>edupath@gmail.com</p>
+                      <p>05698626595</p>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                  <!-- Logo image -->
+                  <div class="logo">
+                  </div>
+                  <!-- Navigation links -->
+                  <div class="footer-links">
+                      <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="accesTolanding/about_us.html">About</a></li>
+                          <li><a href="#">Services</a></li>
+                          <li><a href="accesTocontact/contact.html">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+    <!--================ End footer Area  =================-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/owl-carousel-thumb.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script type ="text/javascript" src="js/script.js?{% now "U" %}"></script>
+
+    <script type="text/css" src="{% static 'js/script.js' %}">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script type ="text/javascript" src="js/theme.js"></script>
+  </body>
+</html>
