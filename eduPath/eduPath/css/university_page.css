@@ -1,0 +1,45 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.gradient-bg {
+    background: linear-gradient(180deg, #242C56 0%, #4BB3FF 100%);
+    padding: 8% 4% 8% 4%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.univ_pic_div {
+    padding: 8% 4% 8% 4%;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+
+}
+
+#univ_pic {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.info-box {
+    border-radius: 14px;
+    background: #D9D9D95E;
+    padding: 20px;
+}
+
+.suggestions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    margin: 10px;
+}

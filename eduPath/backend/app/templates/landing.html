@@ -1,0 +1,458 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <title>                  Edupath
+    </title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <!-- main css -->
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css?{% now "U" %}">
+<style>
+  #adv {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.advice-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+}
+
+.advice-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    transition: opacity 1s ease-in-out;
+}
+
+.advice-card i {
+    color: #ff9800;
+    font-size: 24px;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+</style>
+</style>
+  </head>
+
+  <body>
+    <header class="header">
+        <nav class="navbar">
+          <div class="navbar-left">
+            <ul>
+              <li><a href="/landing/">Home</a></li>
+              <li><a href="/abts/">About Us</a></li>
+              <li><a href="/contact/">Contact Us</a></li>
+              <li><a href="{% url 'universities' %}">Universities</a></li>
+
+            </ul>
+          </div>
+          <div class="navbar-center">
+<img src="{% static 'img/logo.png' %}" alt="logo">          </div>
+          <div class="navbar-right">
+            <ul class="button-list">
+                <li><a href="/reg/" class="button">Register</a></li>
+                <li><a href="/login/" class="button">Login</a></li>
+              </ul>
+              
+          </div>
+        </nav>
+      </header>
+      
+    <!--================ Start Header Menu Area =================-->
+  
+    <!--================ End Header Menu Area =================-->
+
+    <!--================ Start Home Banner Area =================-->
+    <section class="home_banner_area">
+        <div class="banner_inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="banner_content text-center">
+                  <h2>Discover the perfect major and university with Edupath's AI-powered quiz matcher.</h2>
+                  <a href="/questionAboutUs/" class="start">Let's get started</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    <!--================ End Home Banner Area =================-->
+      <!--================ Start Home Banner Area =================-->
+      <section class="home_banner_area2">
+        <div class="banner_inner">
+          <div class="container">
+            <div class="row">
+              <div class="widget-container">
+                <div class="col-lg-4">
+                  <div class="widget">
+                    <div class="widget-icon">
+                      <!-- Icon goes here -->
+                    </div>
+                    <h3 class="widget-title">Receive Personalized Recommendations Just for You</h3>
+                    <p class="widget-content">Take our QuizMatcher to find the best major and university that suit your interests and goals. Our AI-powered platform analyzes your answers and provides personalized recommendations based on your unique profile.</p>
+                    <a href="/reg/" class="start">Get started</a>
+
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="widget">
+                    <div class="widget-icon">
+                      <!-- Icon goes here -->
+                    </div>
+                    <h3 class="widget-title">Explore Diverse Major and University Options</h3>
+                    <p class="widget-content">Our comprehensive database includes a wide range of majors and universities, allowing you to explore various options and find the perfect fit for your academic and career aspirations.</p>
+                    <a href="/abts/" class="start">Learn more</a>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="widget">
+                    <div class="widget-icon">
+                      <!-- Icon goes here -->
+                    </div>
+                    <h3 class="widget-title">Connect with Academic Advisors and Experts</h3>
+                    <p class="widget-content">Our platform also provides access to experienced academic advisors and experts who can guide you through the decision-making process, offering valuable insights and advice.</p>
+                    <a href="/reg/" class="start">Sign Up</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--================ End Home Banner Area =================-->
+   
+        
+
+      <div class="banner3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="single_feature">
+                <div class="icon">
+                  <!-- Your image goes here -->
+                  <img src="{% static 'img/banner3.png' %}" alt="Feature Image">
+                </div>
+                <h4>Personalized recommendations and insights for your future</h4>
+                <p>Edupath offers a unique approach to academic and career planning, utilizing AI technology to provide personalized recommendations and insights. Whether you're unsure about your major or looking for the perfect university, our quizmatcher will help you make well-informed decisions.</p>
+                <!-- Buttons -->
+                <div class="buttons">
+                  <a href="/abts/" class="start">Learn more</a>
+                  <a href="/reg/" class="start">Sign Up</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!--================ Start Nos Services =================-->
+       <div class="banner4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="single_feature">
+                <div class="icon">
+                  <!-- Your image goes here -->
+                </div>
+                <h4>Happy Student</h4>
+                <p>Take the QuizMatcher quiz to find the best major and university for you.</p>
+                <!-- Buttons -->
+                <div class="col-md-6">
+                    <div class="reviews-widget">
+                      <div class="scroll-arrow left-arrow">&lt;</div>
+                      <div class="reviews-container">
+                        <div class="review">
+                          <h5>Samir Malek</h5>
+                          <p>Such a great platform !</p>
+                        </div>
+                        <div class="review">
+                          <h5>Nadir Amouche</h5>
+                          <p>I could perfectly find the suitable path of education</p>
+                        </div>
+                        <div class="review">
+                          <h5>Layla Nancy</h5>
+                          <p>It helps alot, especialy when you dont enough infos  </p>
+                        </div>
+                        <div class="review">
+                            <h5>Amina Lerkased</h5>
+                            <p>I trusted this Edu path and didnt regret it </p>
+                          </div>
+                          
+                        <!-- Add more reviews here -->
+                      </div>
+                      <div class="scroll-arrow right-arrow">&gt;</div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+      
+    <!--================ End Feature Area =================-->
+    <div class="banner4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="single_feature">
+              <div class="icon">
+                <!-- Your image goes here -->
+              </div>
+              <h4>Various statistics from student responses. </h4>
+              <!-- Buttons -->
+              <img src="{% static 'img/g1.png' %}" alt="Feature Image">
+              <img src="{% static 'img/g2.png' %}" alt="Feature Image">
+              <img src="{% static 'img/g3.png' %}" alt="Feature Image">
+              <img src="{% static 'img/g4.png' %}" alt="Feature Image">
+
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    <!--================ Start Nos Services =================-->
+    <div class="banner5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="single_feature">
+                <div class="icon">
+                  <!-- Your image goes here -->
+                </div>
+                <h4>Discover Your Perfect Path</h4>
+                <p>Take the QuizMatcher quiz to find the best major and university for you.</p>
+                <!-- Buttons -->
+                <div class="buttons">
+                    <a href="/abts/" class="start">Learn more</a>
+                    <a href="/questionAboutUs/" class="start">Start</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--================ End Feature Area =================-->
+    <div class="banner6">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-5">
+            <div class="main_title">
+              <div id="adv">
+                <h2>Advice from Students</h2>
+                <div class="advice-container">
+                    <div class="advice-card"><i class="fas fa-lightbulb"></i> Choose what you love and leave the rest to Allah</div>
+                    <div class="advice-card"><i class="fas fa-lightbulb"></i> If you're interested in tech and computer science, ready to face your computer for your whole life and have passion just go for it</div>
+                    <div class="advice-card"><i class="fas fa-lightbulb"></i> مجال جيد يعرفك على التكنولوجيا و علم البيانات و الذكاء الاصطناعي الذي اصبح جد مطلوب لكن يتطلب الاستمرارية و البحث المستمر و الكثيييير من الجهد</div>
+                    <div class="advice-card"><i class="fas fa-lightbulb"></i> Étudier par amour et par compétences et il faut planifier ce que vous voulez exactement dans l'avenir</div>
+                    <div class="advice-card"><i class="fas fa-lightbulb"></i> Je vous la conseille. Il faut juste aimer ce que vous faites pour pouvoir avancer</div>
+                    <div class="advice-card"><i class="fas fa-lightbulb"></i> It's not easy, I know, but if you love what you study and you have chosen it based on your satisfaction, you will pass with no problems. So you just have to be patient.</div>
+                    <div class="advice-card"><i class="fas fa-lightbulb"></i> Try to get into the field as soon as possible</div>
+                    <div class="advice-card"><i class="fas fa-lightbulb"></i> Search well before choosing</div>
+                    <div class="advice-card"><i class="fas fa-lightbulb"></i> Choose your major wisely, don't get fooled by dramas</div>
+                </div>
+            </div>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!--================ Start Popular Courses Area =================-->
+    <div class="banner6">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-5">
+              <div class="main_title">
+                <h2>Frequently Asked Questions</h2>
+                <p class="small-text">Here are some commonly asked questions:</p>
+                <div class="faq-widget">
+                  <div class="faq-column">
+                    <div class="faq-item">
+                      <h4 class="question"><i class="fas fa-plus"></i>Whar are the top 5 universities in Algeria ?</h4>
+                      <p class="answer">ENSIA, ESI ALGIERS , ESI BEDJAIA , NHSM , POLYTECH</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 class="question"><i class="fas fa-plus"></i>The Avreage for ENSIA 2022  ?</h4>
+                        <p class="answer">Math : 17.73 , SC : 18.20 , MathTech : 18.33</p>
+                      </div>
+                      <div class="faq-item">
+                        <h4 class="question"><i class="fas fa-plus"></i>Universities That has Ai as a speciality</h4>
+                        <p class="answer">ENSIA, ESI , POLYTECH</p>
+                      </div>
+                    <div class="faq-item">
+                      <h4 class="question"><i class="fas fa-plus"></i>MEDICINE or ESI ?</h4>
+                      <p class="answer">It depends on the personal choice</p>
+                    </div>
+                    <!-- Add more questions and answers here -->
+                  </div>
+                  <div class="faq-column">
+                    <div class="faq-item">
+                      <h4 class="question"><i class="fas fa-plus"></i>Avreage from MEDICINE 2022 ?</h4>
+                      <p class="answer">MATH : 16 , SC : 15.50 , MathTech : 17</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 class="question"><i class="fas fa-plus"></i>Is Edu path free ?</h4>
+                        <p class="answer">Yes it free and open to every student</p>
+                      </div>
+                      <div class="faq-item">
+                        <h4 class="question"><i class="fas fa-plus"></i>How can contact Edu Path team ?</h4>
+                        <p class="answer">via the emil : edupath@gmail.com</p>
+                      </div>
+                    <div class="faq-item">
+                      <h4 class="question"><i class="fas fa-plus"></i>Who developed Edu Path ?</h4>
+                      <p class="answer">Smart guys from ENSIA</p>
+                    </div>
+                    <!-- Add more questions and answers here -->
+                  </div>
+                </div>
+                <h2>Still have Questions ?</h2>
+
+
+                <a href="/contact/" class="start">Contact us </a>
+                <br>
+                <br>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    <!--================ End Popular Courses Area =================-->
+
+    <!--================ End Registration Area =================-->
+<br><br>
+    <!--================ Start footer Area  =================-->
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6">
+                  <!-- Location and contact info -->
+                  <div class="location-info">
+                      <p>Mahelma , Algiers ,Algeria</p>
+                      <p>edupath@gmail.com</p>
+                      <p>05698626595</p>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                  <!-- Logo image -->
+                  <div class="logo">
+                  </div>
+                  <!-- Navigation links -->
+                  <div class="footer-links">
+                      <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="accesTolanding/about_us.html">About</a></li>
+                          <li><a href="#">Services</a></li>
+                          <li><a href="accesTocontact/contact.html">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+    <!--================ End footer Area  =================-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/owl-carousel-thumb.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script type ="text/javascript" src="js/script.js?{% now "U" %}"></script>
+
+    <script type="text/css" src="{% static 'js/script.js' %}">
+
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const adviceContainer = document.querySelector('.advice-container');
+            const cards = Array.from(adviceContainer.children);
+            let currentIndex = 0;
+            const displayCount = 6;
+            const interval = 5000; // 5 seconds
+
+            function showNextSet() {
+                cards.forEach((card, index) => {
+                    card.classList.remove('fade-in');
+                    card.classList.add('fade-out');
+                });
+
+                setTimeout(() => {
+                    cards.forEach((card, index) => {
+                        if (index >= currentIndex && index < currentIndex + displayCount) {
+                            card.classList.remove('fade-out');
+                            card.classList.add('fade-in');
+                        }
+                    });
+
+                    currentIndex += displayCount;
+                    if (currentIndex >= cards.length) {
+                        currentIndex = 0;
+                    }
+                }, 1000); // Match this delay with CSS transition duration
+            }
+
+            setInterval(showNextSet, interval);
+            showNextSet(); // Initial call to show the first set
+        });
+    </script>
+
+    
+
+
+
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script type ="text/javascript" src="js/theme.js"></script>
+  </body>
+</html>

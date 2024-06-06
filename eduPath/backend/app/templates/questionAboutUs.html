@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discover</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/questionAboutUs.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/faqs.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}?{% now "U" %}">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+        <div class="navbar-left">
+            <ul>
+                <li><a href="/landing/">Home</a></li>
+                <li><a href="/abts/">About Us</a></li>
+                <li><a href="/contact/">Contact Us</a></li>
+                <li><a href="{% url 'universities' %}">Universities</a></li>
+            </ul>
+        </div>
+        <div class="navbar-center">
+            <img src="{% static 'img/logo.png' %}" alt="logo">
+        </div>
+        <div class="navbar-right">
+            <ul class="button-list">
+                <li><a href="/reg/" class="button">Register</a></li>
+                <li><a href="/login/" class="button">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="div-discover">
+    <div class="div-2-discover">
+        <div class="div-3-discover">
+            <div class="column-discover">
+                <div class="div-4-discover">
+                    <div class="div-5-discover">
+                        <div class="div-6-discover">
+                            <div class="div-7-discover">Discover</div>
+                            <div class="div-8-discover">
+                                <div class="div-9-discover">
+                                    Find Your Perfect University Match with QuizMatcher
+                                </div>
+                                <div class="div-10-discover">
+                                    QuizMatcher is an AI-driven platform that uses your profile to provide personalized
+                                    university suggestions. Answer a few questions and find your dream university today!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div-11-discover">
+                            <div class="div-12-discover">
+                                <div class="column-discover">
+                                    <div class="div-13-discover">
+                                        <div class="div-14-discover">How It Works?</div>
+                                        <div class="div-15-discover">
+                                            1-Answer Questions
+                                            <br />
+                                            2-Get Personalized University Suggestions
+                                            <br />
+                                            3-Explore Your Options
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column-2-discover">
+                                    <div class="div-16-discover">
+                                        <div class="div-17-discover">Why Choose Us?</div>
+                                        <div class="div-18-discover">
+                                            AI-Driven Process Tailored University Suggestions Easy and Convenient
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div-19-discover">
+                        <div class="buttons">
+                            
+                            <a href="/startQuiz/" class="start">Signup to start</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="column-3-discover">
+                <img loading="lazy" src="{% static 'img/quizimg.png' %}" class="img-discover" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="div-faqs">
+    <div class="div-2-faqs">
+        <div class="div-3-faqs">
+            <div class="div-4-faqs">FAQs</div>
+            <div class="div-5-faqs">
+                Find answers to common questions about QuizMatcher and how it uses AI.
+            </div>
+        </div>
+        <div class="div-6-faqs">
+            <div class="div-9-faqs">
+                <div class="div-10-faqs">How does the university selection quiz work?</div>
+                <img loading="lazy" src="{% static 'img/plus.png' %}" class="img-faqs" onclick="toggleHiddenSectionfirst()" />
+            </div>
+            <div class="hidden-section-1" style="display: none;">
+                <!-- Content of hidden section -->
+                Our university selection quiz is designed to help Baccalaureate students in Algeria choose the right university
+                and specialization based on their interests, preferences, and goals. By answering a series of questions, students
+                receive recommendations tailored to their needs, guiding them towards making informed decisions about their higher
+                education journey.
+            </div>
+            <div class="div-9-faqs">
+                <div class="div-10-faqs">Can I retake the quiz if my preferences change or I want to explore different options?</div>
+                <img loading="lazy" src="{% static 'img/plus.png' %}" class="img-faqs" onclick="toggleHiddenSectionsecond()" />
+            </div>
+            <div class="hidden-section-2" style="display: none;">
+                <!-- Content of hidden section -->
+                Absolutely! We understand that preferences and goals may evolve over time, which is why we offer the flexibility for students
+                to retake the quiz as needed. Whether you're reconsidering your career path or exploring new interests,
+                our quiz is here to assist you in finding the right university and specialization for your future endeavors.
+            </div>
+            <div class="div-9-faqs">
+                <div class="div-10-faqs">Is the quiz suitable for students from all academic backgrounds?</div>
+                <img loading="lazy" src="{% static 'img/plus.png' %}" class="img-faqs" onclick="toggleHiddenSectionthird()" />
+            </div>
+            <div class="hidden-section-3" style="display: none;">
+                <!-- Content of hidden section -->
+                Yes, the university selection quiz is designed to be inclusive and beneficial for students from diverse academic backgrounds.
+                Whether you're interested in technology, healthcare, finance, marketing, or any other field, the quiz provides
+                tailored recommendations to help you explore suitable university options and specializations.
+            </div>
+        </div>
+        <div class="div-17-faqs">
+            <div class="div-18-faqs">
+                <div class="div-19-faqs">Contact Us</div>
+                <div class="div-20-faqs">
+                    Get in touch with our team for any additional queries.
+                </div>
+            </div>
+            <div class="div-21-faqs">Contact</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleHiddenSectionfirst() {
+        var hiddenSection = document.querySelector('.hidden-section-1');
+        hiddenSection.style.display = hiddenSection.style.display === 'none' ? 'block' : 'none';
+    }
+    function toggleHiddenSectionsecond() {
+        var hiddenSection = document.querySelector('.hidden-section-2');
+        hiddenSection.style.display = hiddenSection.style.display === 'none' ? 'block' : 'none';
+    }
+    function toggleHiddenSectionthird() {
+        var hiddenSection = document.querySelector('.hidden-section-3');
+        hiddenSection.style.display = hiddenSection.style.display === 'none' ? 'block' : 'none';
+    }
+</script>
+
+<!--================ Start footer Area  =================-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <!-- Location and contact info -->
+                <div class="location-info">
+                    <p>Mahelma , Algiers ,Algeria</p>
+                    <p>edupath@gmail.com</p>
+                    <p>05698626595</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <!-- Logo image -->
+                <div class="logo">
+                </div>
+                <!-- Navigation links -->
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="accesTolanding/about_us.html">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="accesTocontact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--================ End footer Area  =================-->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'js/popper.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
+<script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/owl-carousel-thumb.min.js' %}"></script>
+<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'js/mail-script.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/script.js' %}?{% now 'U' %}"></script>
+</body>
+</html>
+
+ 

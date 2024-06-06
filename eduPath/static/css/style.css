@@ -1,0 +1,1042 @@
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500|Rubik:500, 600");
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+body {
+  line-height: 25px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #7b838a; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #002347; }
+
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out; }
+  a:hover, a:focus {
+    text-decoration: none;
+    outline: none; }
+
+/* Home Banner Area css
+============================================================================================ */
+.home_banner_area {
+  z-index: 1;
+  min-height: 1000px;
+  position: relative;
+  background: url(../img/home_banner.png) no-repeat center;
+  background-size: cover; /* Ensure background image covers the entire section */
+}
+
+.home_banner_area .banner_inner {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .home_banner_area .banner_inner {
+    top: 50%;
+  }
+}
+
+.home_banner_area .banner_inner .banner_content {
+  position: relative;
+  z-index: 2;
+  text-align: center; /* Center align text */
+}
+
+.home_banner_area .banner_inner .button {
+  color: #00070e;
+  background-color: #00234700;
+  font-size: 20px;
+  border-radius: 30px;
+  font-weight: 500; /* Corrected font weight */
+}
+
+#adv {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.advice-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  overflow: hidden;
+  height: 400px;
+  position: relative;
+}
+
+.advice-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  transition: opacity 1s ease-in-out;
+}
+
+.advice-card i {
+  color: #ff9800;
+  font-size: 24px;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+/* End Home Banner Area css
+============================================================================================ */
+/* Home Banner 2  Area css
+============================================================================================ */
+.home_banner_area2 {
+  z-index: 1;
+  min-height: 800px;
+  position: relative;
+  background: url(../img/banner2.png) no-repeat center;
+  background-size: cover;
+}
+
+.home_banner_area2 .banner_inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .home_banner_area2 .banner_inner {
+    top: 50%;
+  }
+}
+
+.home_banner_area2 .banner_inner .banner_content h2 {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.home_banner_area2 .banner_inner .banner_content p {
+  font-size: 20px;
+  color: #002347;
+  font-weight: 500;
+}
+.widget-container {
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly */
+}
+
+.widget {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.widget-icon {
+  /* Add styles for icon container if needed */
+}
+
+.widget-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.widget-content {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.widget-button {
+  padding: 10px 20px;
+  background-color: #007bff00;
+  color: #000000;
+  border-radius: 30px;
+  
+  cursor: pointer;
+}
+
+.widget-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* End Home Banner Area css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* Start About Area css
+============================================================================================ */
+.h_blog_item .col-lg-6 {
+  vertical-align: middle;
+  align-self: center; }
+.h_blog_item .h_blog_img {
+  position: relative;
+  z-index: 10; }
+.h_blog_item .h_blog_text {
+  padding-top: 0px;
+  padding-bottom: 20px; }
+  .h_blog_item .h_blog_text .h_blog_text_inner {
+    background: #fff;
+    padding: 75px 90px;
+    border-radius: 10px; }
+    @media (max-width: 991px) {
+      .h_blog_item .h_blog_text .h_blog_text_inner {
+        padding: 30px 15px; } }
+    .h_blog_item .h_blog_text .h_blog_text_inner.left {
+      position: relative;
+      z-index: 2; }
+    .h_blog_item .h_blog_text .h_blog_text_inner.right {
+      margin-left: -104px;
+      position: relative;
+      z-index: 1;
+      border: 10px solid #f9f9ff; }
+      @media (max-width: 991px) {
+        .h_blog_item .h_blog_text .h_blog_text_inner.right {
+          margin-left: 0px; } }
+    .h_blog_item .h_blog_text .h_blog_text_inner h4 {
+      color: #002347;
+      font-size: 30px;
+      margin-bottom: 15px; }
+    .h_blog_item .h_blog_text .h_blog_text_inner p {
+      margin-bottom: 30px; }
+
+/* End About Area css
+============================================================================================ */
+/* Start banner3 Area css
+============================================================================================ */
+.banner3 {
+  padding-bottom: 100px;
+  margin: 50px;
+}
+@media (max-width: 991px) {
+  .banner3 {
+    padding-bottom: 40px;
+  }
+}
+
+.single_feature {
+  position: relative;
+  background: #f9f9ff;
+  padding: 0; /* Remove padding */
+  margin-bottom: 30px;
+  height: auto; /* Set height to auto */
+  overflow: hidden; /* Clear floats */
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 480px) {
+  .single_feature {
+    padding: 0; /* Remove padding */
+  }
+}
+.single_feature .icon {
+  float: right; /* Align the icon to the right */
+  margin-left: 20px; /* Adding some space between icon and text */
+}
+.single_feature .icon img {
+  width: auto; /* Set image width to auto */
+  height: 100%; /* Set image height to 100% */
+}.single_feature h4 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px; /* Add margin to separate from buttons */
+  line-height: 1.2; /* Adjust line height as needed */
+}
+
+.single_feature p {
+  margin-bottom: 0px;
+}
+.single_feature .buttons {
+  margin-top: 20px; /* Add margin to separate from text */
+}
+.single_feature .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Your button color */
+  color: #fff; /* Button text color */
+  text-decoration: none;
+  border-radius: 20px; /* Border radius */
+  margin-right: 10px; /* Add margin between buttons */
+}
+.single_feature .button:last-child {
+  margin-right: 0; /* Remove margin from last button */
+}
+
+
+/* End Features Area css
+============================================================================================ */
+.banner5 {
+  padding-bottom: 100px;
+  margin: 50px;
+  text-align: center; /* Center all elements */
+}
+@media (max-width: 991px) {
+  .banner5 {
+    padding-bottom: 40px;
+  }
+}
+
+.single_feature {
+  position: relative;
+  background: #f9f9ff;
+  padding: 0; /* Remove padding */
+  margin-bottom: 30px;
+  height: auto; /* Set height to auto */
+  overflow: hidden; /* Clear floats */
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  text-align: center; /* Center text */
+}
+@media (max-width: 480px) {
+  .single_feature {
+    padding: 0; /* Remove padding */
+  }
+}
+
+.single_feature h4 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px; /* Add margin to separate from buttons */
+  line-height: 1.2; /* Adjust line height as needed */
+}
+
+.single_feature p {
+  margin-bottom: 0px;
+}
+.single_feature .buttons {
+  margin-top: 20px; /* Add margin to separate from text */
+  text-align: center; /* Center buttons */
+}
+.single_feature .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Your button color */
+  color: #fff; /* Button text color */
+  text-decoration: none;
+  border-radius: 20px; /* Border radius */
+  margin-right: 10px; /* Add margin between buttons */
+}
+.single_feature .button:last-child {
+  margin-right: 0; /* Remove margin from last button */
+}
+
+
+/* End Features Area css
+============================================================================================ */
+.banner6 {
+  padding-bottom: 100px;
+  margin: 10px;
+  
+  text-align: center; /* Center all elements */
+}
+@media (max-width: 991px) {
+  .banner6 {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner6 .container {
+    padding: 0; /* Remove padding */
+  }
+}
+
+.banner6 .container {
+  margin-bottom: 30px;
+  height: auto; /* Set height to auto */
+  overflow: hidden; /* Clear floats */
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  text-align: center; /* Center text */
+  background: linear-gradient(180deg, #27279c, rgb(177, 238, 253)); /* Gradient background */
+padding-top: 40px;
+}
+
+.banner6 .container h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px; /* Add margin to separate from buttons */
+  line-height: 1.2; /* Adjust line height as needed */
+}
+
+.banner6 .container h4 {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px; /* Add margin to separate from buttons */
+  line-height: 1.2; /* Adjust line height as needed */
+}
+.banner6 .container  p {
+  color: white;
+
+  margin-bottom: 0px;
+}
+.banner6 .container .buttons {
+  margin-top: 20px; /* Add margin to separate from text */
+  text-align: center; /* Center buttons */
+}
+
+.banner6 .faq-widget {
+
+  padding: 100px;
+  display: flex;
+
+}
+
+.banner6 .faq-column {
+  flex: 1;
+
+}
+
+.banner6 .faq-item {
+  padding: 10px ;
+
+}
+
+.banner6 .question {
+  cursor: pointer;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+
+}
+
+.banner6 .answer {
+  display: none;
+}
+
+.banner6 .contact-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.banner6 .small-text {
+  text-align: center;
+}
+
+
+/* End Features Area css
+============================================================================================ */
+.banner4 {
+  padding-bottom: 10px;
+  margin: 10px;
+  text-align: center; /* Center all elements */
+}
+@media (max-width: 991px) {
+  .banner4 {
+    padding-bottom: 40px;
+  }
+}
+.banner4 .single_feature {
+  position: relative;
+  background: linear-gradient(135deg, #dadaff, #b1b1fd); /* Gradient background */
+  padding: 0; /* Remove padding */
+  margin-bottom: 30px;
+  padding: 100px;
+  height: auto; /* Set height to auto */
+  overflow: hidden; /* Clear floats */
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  text-align: center; /* Center text */
+}
+@media (max-width: 480px) {
+  .single_feature {
+    padding: 0; /* Remove padding */
+  }
+}
+
+.single_feature h4 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px; /* Add margin to separate from buttons */
+  line-height: 1.2; /* Adjust line height as needed */
+}
+
+.banner4 .single_feature p {
+  margin-bottom: 0px;
+  color: #111111;
+}
+.single_feature .buttons {
+  margin-top: 20px; /* Add margin to separate from text */
+  text-align: center; /* Center buttons */
+}
+.single_feature .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Your button color */
+  color: #fff; /* Button text color */
+  text-decoration: none;
+  border-radius: 20px; /* Border radius */
+  margin-right: 10px; /* Add margin between buttons */
+}
+.single_feature .button:last-child {
+  margin-right: 0; /* Remove margin from last button */
+}.banner4 .reviews-widget {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner4 .reviews-container {
+  margin: 20px;
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.banner4 .review {
+  flex: 0 0 auto;
+  width: 300px;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.banner4 .scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 24px;
+  color: #007bff;
+}
+
+.banner4 .left-arrow {
+  left: 10px;
+}
+
+.banner4 .right-arrow {
+  right: 10px;
+}
+
+
+
+
+
+.header {
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-left,
+.navbar-right {
+  flex: 1;
+}
+
+.navbar-center {
+  flex: 1;
+  text-align: center;
+}
+
+.navbar-left ul,
+.navbar-right ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-left ul li,
+.navbar-right ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar-left ul li:last-child,
+.navbar-right ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar-left ul li a,
+.navbar-right ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 200;
+}
+.navbar-right ul {
+  text-align: right;
+}
+.header img {
+  max-width: 100px; /* Adjust the maximum width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+.button-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.button-list li {
+  display: inline-block;
+}
+
+.navbar .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(8, 89, 240); /* Button background color */
+  color: #ffffff; /* Button text color */
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.start{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(105, 152, 240); /* Button background color */
+  color: #ffffff; /* Button text color */
+  text-decoration: none;
+  border-radius: 20px;
+  border-color: #000000;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e9e9e9; /* Button background color on hover */
+}
+
+
+
+
+.footer {
+  background-color: #ffffff; /* White background */
+  padding: 50px 0; /* Adjust padding as needed */
+}
+
+.footer .container {
+  padding: 30px;
+  border: 1px solid black;
+}
+
+.location-info {
+  margin-bottom: 20px; /* Space between location and contact info */
+}
+
+.logo {
+  text-align: center; /* Center the logo */
+}
+
+.logo img {
+  max-width: 100%; /* Ensure the logo image doesn't exceed the container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Make the image a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  margin-bottom: 20px; /* Space between logo and navigation links */
+}
+
+
+.footer-links {
+  text-align: right; /* Align navigation links to the right */
+}
+
+.footer-links ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px; /* Space between navigation links */
+}
+
+.footer-links ul li a {
+  color: #000000; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold font */
+  font-size: 16px; /* Font size */
+}
+
+.footer-links ul li a:hover {
+  color: #007bff; /* Link color on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+.login-container {
+  background: linear-gradient(0deg, #dedeff, #a1e3f7); /* Gradient background */
+  padding: 150px; /* Increased padding */
+  border-radius: 50px;
+  text-align: center;
+}
+
+
+.login-container h2 {
+  color: #000000; /* White color for text */
+}
+
+.email-input, .password-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000; /* White background color */
+  color: #ffffff; /* Blue color for text */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn-gmail {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff; /* White background color */
+  color: #007bff; /* Blue color for text */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.login-btn:hover {
+  background-color: #0056b3; /* Darker blue background color on hover */
+  color: #ededed;
+
+}
+
+.login-btn-gmail:hover {
+  background-color: #0056b3; /* Darker blue background color on hover */
+  color: #ededed;
+}
+
+
+
+
+
+  
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.create-account-link {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ffffff70; /* Button background color */
+  color: #006eff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.create-account-link:hover {
+  background-color: #006eff; /* Button background color */
+  color: #fdfdfd; /* Button text color */
+
+
+ 
+}
+
+.bnrabs1 {
+  padding-bottom: 100px;
+  margin: 50px;
+}
+@media (max-width: 991px) {
+  .bnrabs1 {
+    padding-bottom: 40px;
+  }
+}
+
+.bnrabs1.single_feature {
+  position: relative;
+  background: #f9f9ff;
+  padding: 0; /* Remove padding */
+  margin-bottom: 30px;
+  height: auto; /* Set height to auto */
+  overflow: hidden; /* Clear floats */
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 480px) {
+  .bnrabs1 .single_feature {
+    padding: 0; /* Remove padding */
+  }
+}
+.bnrabs1.single_feature .icon {
+  float: right; /* Align the icon to the right */
+  margin-left: 20px; /* Adding some space between icon and text */
+}
+.bnrabs1.single_feature .icon img {
+  width: auto; /* Set image width to auto */
+  height: 100%; /* Set image height to 100% */
+}.bnrabs1.single_feature h4 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px; /* Add margin to separate from buttons */
+  line-height: 1.2; /* Adjust line height as needed */
+}
+
+.bnrabs1.single_feature p {
+  margin-bottom: 0px;
+}
+.bnrabs1.single_feature .buttons {
+  margin-top: 20px; /* Add margin to separate from text */
+}
+.bnrabs1.single_feature .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Your button color */
+  color: #fff; /* Button text color */
+  text-decoration: none;
+  border-radius: 20px; /* Border radius */
+  margin-right: 10px; /* Add margin between buttons */
+}
+.bnrabs1.single_feature .button:last-child {
+  margin-right: 0; /* Remove margin from last button */
+}
+
+
+
+
+
+.absbn2
+{
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.map {
+  padding-bottom: 100px;
+  margin: 50px;
+}
+@media (max-width: 991px) {
+  .map {
+    padding-bottom: 40px;
+  }
+}
+
+.map .single_feature {
+  position: relative;
+  background: #f9f9ff;
+  padding: 0; /* Remove padding */
+  margin-bottom: 30px;
+  height: auto; /* Set height to auto */
+  overflow: hidden; /* Clear floats */
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 480px) {
+  .map .single_feature {
+    padding: 0; /* Remove padding */
+  }
+}
+.map .single_feature .icon {
+  float: right; /* Align the icon to the right */
+  margin-left: 20px; /* Adding some space between icon and text */
+}
+.map .single_feature .icon img {
+  width: auto; /* Set image width to auto */
+  height: 100%; /* Set image height to 100% */
+}.map .single_feature h4 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px; /* Add margin to separate from buttons */
+  line-height: 1.2; /* Adjust line height as needed */
+}
+.map h5
+{
+  font-size: 30px;
+  font-weight: 100;
+  color: #020202;
+}
+.map .coninfo
+{
+  text-align: left;
+}
+.map .coninfo h4
+{
+ 
+  color: #020202;
+}
+.map .single_feature p {
+  color: #020202;
+  margin-bottom: 0px;
+}
+.map .single_feature .buttons {
+  margin-top: 20px; /* Add margin to separate from text */
+}
+.map .single_feature .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Your button color */
+  color: #fff; /* Button text color */
+  text-decoration: none;
+  border-radius: 20px; /* Border radius */
+  margin-right: 10px; /* Add margin between buttons */
+}
+.map .single_feature .button:last-child {
+  margin-right: 0; /* Remove margin from last button */
+}
+
+
+
+/* Form container */
+.contact-form {
+  margin-top: 30px;
+}
+
+/* Form title */
+.contact-form h2 {
+  text-align: left;
+  font-size: 60px;
+  margin-bottom: 60px;
+  color: #020202;
+
+}
+
+
+/* Form input fields */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Form submit button */
+.contact-form button[type="submit"] {
+  width: 10%;
+  padding: 10px;
+  background-color: #080808;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Form submit button on hover */
+.contact-form button[type="submit"]:hover {
+  background-color: #b6b6b6;
+}
