@@ -5,7 +5,7 @@
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
     
-    <link rel="stylesheet" type="text/css" href="../static/css/start_quiz.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/start_quiz.css?{% now "U" %}">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap"
@@ -90,10 +90,7 @@
               aspirations, guiding you towards a destination that feels like it
               was meant just for you.
             </p>
-            <p class="are-you-ready">
-              Are you ready to unveil the possibilities? Your future starts now.
-              Let's embark on this journey together.
-            </p>
+          
           </div>
         </div>
       </section>
@@ -111,7 +108,7 @@
                         <!-- Dynamic buttons will be injected here -->
                     </div>
                     <div class="navigation-buttons">
-                      <button class="button7">Previous</button> <!-- Button for navigating to the previous question -->
+                      <button class="button7">Back</button> <!-- Button for navigating to the previous question -->
                       <button class="button9">Next</button> <!-- Button for navigating to the next question -->
                   </div>
                 </div>
@@ -249,73 +246,115 @@
       <script>
         // Define the quiz questions and control variables.
         const quizQuestions = [
+        {
+          question: "What is your age?",
+          answers: ["17", "18", "19", "20", "21", "22","23"]
+        },
+        {
+          question: "What is your gender?",
+          answers: ["Male","Female"]
+        },
+
           {
-            question: "What area of study interests you the most?",
-            description: "Understanding your academic interests helps us tailor your journey towards a future filled with passion and success. Choose the option that resonates with you the most.",
-            answers: ["Engineering and Technology", "Sciences", "Arts and Humanities", "Social Sciences"]
+            question: "What was your baccalaureate average ?",
+            answers:[  "9",  "10",  "11",  "12",  "13",  "14",  "15",  "16",  "17",  "18",  "19",  "20"]
+
           },
           {
-            question: "What is  your baccalaureate degree stream?",
-            description: "To know more about your educational background.",
-            answers: ["Mathematics", "Science", "Technical Mathematics", "Foreign Languages", "Arabic Literature"]
+            question : "What are your personal interests?",
+            answers : ["Technology", "Law", "Humanities", "Engineering", "Economics", "Social Sciences", "Science", "Biology", "Agriculture", "Sports", "Religious Studies", "Environmental Science", "Finance", "Marine Sciences", "Statistics", "Biotechnology", "Journalism", "Forestry", "Nanotechnology", "Political Science", "Artificial Intelligence", "Veterinary Science", "Arts", "Architecture", "Food Science", "Commerce", "Management", "Applied Sciences", "Health", "Translation", "Geography", "GESTION", "Urban Management", "Industrial Safety", "Urban Planning", "PHYSIQUE", "Biomedical Engineering", "Geophysics", "Marine Biology", "Communication"]
+          }, 
+                    
+          {
+            question: "How well do you want the program of the major to prepare you for your future career?",
+            answers: ["Not at All" ,"Very Well" ,"Somewhat Well"]
+          },
+            
+          {
+            question:"What factors are influencing your decision to choose a particular university for your undergraduate studies? ",
+            answers: ["Job Market Trends", "Personal Interests", "Work-Life Balance", "Scholarship Availability", "University Reputation"]
+
           },
           {
-  question: "What subjects are you most  excel in Bac?",
-  description: "Identifying your strengths can guide you to a major that will both challenge and fulfill you.",
-  answers: ["Sciences", "Mathematics", "Physics", "Technical and Engineering", "Arts and Design","Litrature","Languages"]
-},
-{
-  question: "What are your career aspirations or long-term goals?",
-  description: "Understanding your career goals helps us suggest a path that aligns with your professional aspirations.",
-  answers: ["Healthcare Professional", "Engineer", "Business Leader", "Academic or Researcher", "Artist or Designer"]
-},
+            question:"What factors are influencing your decision to choose a particular university for your undergraduate studies? ",
+            answers: ["Job Market Trends", "Personal Interests", "Work-Life Balance", "Scholarship Availability", "University Reputation"]
 
-{
-  question: "Are you open to studying in a different city or region, or do you prefer to stay close to home?",
-  description: "Your willingness to relocate can affect your choice of university and the opportunities available to you.",
-  answers: ["Open to relocation", "Prefer to stay close to home", "Flexible, depends on the university", "Only major cities"]
-},
-{
-  question: "How important are factors such as academic advising, career counseling, and student support services to you?",
-  description: "The availability of support services can enhance your academic experience and assist with future career planning.",
-  answers: ["Very important", "Somewhat important", "Neutral", "Not very important", "Not important at all"]
-},
-{
-  question: "Are you interested in participating in extracurricular activities or joining student clubs and organizations?",
-  description: "Campus life and extracurricular activities can play a crucial role in your personal and professional development.",
-  answers: ["Yes, very interested", "Somewhat interested", "Only if relevant to my studies", "Not interested at all"]
-},
-{
-  question: "What are your financial constraints or preferences when it comes to tuition fees, scholarships, and financial aid packages?",
-  description: "Financial considerations are critical in planning for university, affecting where and what you can study.",
-  answers: ["Need significant financial aid", "Looking for moderate scholarships", "Small financial aid is sufficient", "Financially flexible", "Not a consideration"]
-},
-{
-  question: "Do you have a specific major or specialization in mind, or are you still exploring your options?",
-  description: "Knowing whether you've already decided on a major or are still exploring can help tailor our recommendations.",
-  answers: ["Already decided", "Narrowed down a few options", "Exploring broadly", "Looking for suggestions", "Undecided"]
-}
+          },
+          {
+            question:"How much do you accept the facilities provided on campus to be ?",
+            answers:["Average", "Excellent", "Good", "Poor"]
 
+
+          },
+          {
+            question:"How would you like the overall environment around campus to be?",
+            answers:  ["Diverse and vibrant", "Welcoming and inclusive", "Stressful and competitive", "Safe and secure"]
+
+
+          },
+          {
+            question:"How much do u accept the quality of food services offered on campus?",
+            answers: ["Excellent", "Poor", "Good", "Average"]
+
+
+          },
+          {
+            question:"How would you want the social life on campus to be?",
+            answers:  ["Lacking and dull", "Limited but satisfactory", "Active and engaging"]
+
+
+
+          },
+          {
+            question:"What transportation options do you find suitable for your needs?",
+            answers:  ["Bus services", "walking", "Bus services Carpooling programs"]
+
+
+
+          },
+          {
+            question:"Do you want to participate in any of the following programs related to your field of study",
+            answers:  ["Internships", "Co op Programs", "None", "Research Projects"]
+
+
+
+
+          },
           
         ];
-      
-        let currentQuestionIndex = 0;
-      
-        // Function to display the current question and its options.
-        function displayQuestion() {
-          const questionInfo = quizQuestions[currentQuestionIndex];
-          document.querySelector('.quest').textContent = questionInfo.question;
-          document.querySelector('.disc').textContent = questionInfo.description;
-      
-          const optionsContainer = document.querySelector('.frame7');
-          optionsContainer.innerHTML = '';
-          questionInfo.answers.forEach((answer, index) => {
-            const buttonHtml = `<button class="radio" onclick="selectOption(this)" id="${index}">${answer}</button>`;
-            optionsContainer.innerHTML += buttonHtml;
-          });
-        }
-      
-        function selectOption(selectedButton) {
+        let userSelections = {};
+
+// Function to display the current question and its options
+function displayQuestion() {
+    const questionInfo = quizQuestions[currentQuestionIndex];
+    document.querySelector('.quest').textContent = questionInfo.question;
+    document.querySelector('.disc').textContent = questionInfo.description;
+
+    const optionsContainer = document.querySelector('.frame7');
+    optionsContainer.innerHTML = '';
+    questionInfo.answers.forEach((answer, index) => {
+        const buttonHtml = `<button class="radio" onclick="selectOption(this, '${questionInfo.question}')" id="${index}">${answer}</button>`;
+        optionsContainer.innerHTML += buttonHtml;
+    });
+}
+
+// Function to display the user's selected choices
+function displaySelectedChoices() {
+    const selectedChoicesContainer = document.querySelector('.selected-choices-container');
+    selectedChoicesContainer.innerHTML = ''; // Clear previous selections
+
+    // Loop through the userSelections dictionary and display each question along with its selected choice
+    for (const [question, choice] of Object.entries(userSelections)) {
+        const selectionHtml = `<p><strong>${question}:</strong> ${choice}</p>`;
+        selectedChoicesContainer.innerHTML += selectionHtml;
+    }
+}
+
+// Function to handle option selection
+function selectOption(selectedButton, question) {
+    // Update user selections dictionary with the selected option for the current question
+    userSelections[question] = selectedButton.textContent.trim();
+
     // Get all buttons with the class 'radio' inside the 'frame7' div
     const buttons = document.querySelectorAll('.frame7 .radio');
 
@@ -328,55 +367,34 @@
     selectedButton.classList.add('radio-selected');
 }
 
-      
-        // Navigation functions for the quiz.
-        function goToNextQuestion() {
-          if (currentQuestionIndex < quizQuestions.length - 1) {
-            currentQuestionIndex++;
-            displayQuestion();
-          } else {
-            alert("This is the last question.");
-          }
-        }
-      
-        function goToPreviousQuestion() {
-          if (currentQuestionIndex > 0) {
-            currentQuestionIndex--;
-            displayQuestion();
-          } else {
-            alert("This is the first question.");
-          }
-        }
-      
-        // Scroll animation setup.
-        document.addEventListener('DOMContentLoaded', function() {
-          var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
-          var observer = new IntersectionObserver(
-            (entries) => {
-              entries.forEach(entry => {
-                if (entry.isIntersecting || entry.intersectionRatio > 0) {
-                  entry.target.classList.add("animate");
-                  observer.unobserve(entry.target);
-                }
-              });
-            },
-            {
-              threshold: 0.15
-            }
-          );
-      
-          scrollAnimElements.forEach(element => observer.observe(element));
-      
-          // Setup initial display and bind navigation buttons.
-          displayQuestion();
-          document.querySelector('.button9').addEventListener('click', goToNextQuestion);
-          document.querySelector('.button7').addEventListener('click', goToPreviousQuestion);
-        });
-        function selectOption(selectedButton) {
-            const buttons = document.querySelectorAll('.frame-div .radio');
-            buttons.forEach(button => button.classList.remove('radio-selected'));
-            selectedButton.classList.add('radio-selected');
-        }
+// Function to navigate to the next question
+function nextQuestion() {
+    // Check if the user has selected an option for the current question
+    const currentQuestion = quizQuestions[currentQuestionIndex].question;
+    if (!userSelections[currentQuestion]) {
+        alert('Please select an option before proceeding to the next question.');
+        return;
+    }
+
+    // Increment the current question index
+    currentQuestionIndex++;
+
+    // If all questions have been answered, proceed to prediction
+    if (currentQuestionIndex === quizQuestions.length) {
+        displaySelectedChoices();
+
+        // Pass user selections to your model for prediction
+        console.log(userSelections);
+        return;
+    }
+
+    // Display the next question
+    displayQuestion();
+}
+
+// Display the first question when the page loads
+window.onload = displayQuestion;
+
       </script>
       <script type="text/javascript">
         (function(d, t) {
