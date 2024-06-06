@@ -75,7 +75,50 @@ a {
   font-weight: 500; /* Corrected font weight */
 }
 
+#adv {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.advice-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  overflow: hidden;
+  height: 400px;
+  position: relative;
+}
+
+.advice-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  transition: opacity 1s ease-in-out;
+}
+
+.advice-card i {
+  color: #ff9800;
+  font-size: 24px;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
 
 /* End Home Banner Area css
 ============================================================================================ */
@@ -396,9 +439,9 @@ padding-top: 40px;
 
 .banner6 .question {
   cursor: pointer;
-
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border: 1px solid #ffffff;
-  border-radius: 0px;
+  border-radius: 20px;
 
 }
 
@@ -582,13 +625,24 @@ padding-top: 40px;
   display: inline-block;
 }
 
-.button {
+.navbar .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #cccccc; /* Button background color */
-  color: #fff; /* Button text color */
+  background-color: rgb(8, 89, 240); /* Button background color */
+  color: #ffffff; /* Button text color */
   text-decoration: none;
   border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.start{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(105, 152, 240); /* Button background color */
+  color: #ffffff; /* Button text color */
+  text-decoration: none;
+  border-radius: 20px;
+  border-color: #000000;
   transition: background-color 0.3s ease;
 }
 
@@ -778,8 +832,6 @@ padding-top: 40px;
 
  
 }
-
-
 
 .bnrabs1 {
   padding-bottom: 100px;

@@ -1,0 +1,468 @@
+/* Apply a CSS reset to remove default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set full height and width for HTML and body */
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+.div-discover {
+    background-color: var(--Background-color-primary, #fff);
+    display: flex;
+    margin-top: -5px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 60px;
+  }
+  @media (max-width: 100%) {
+    .div-discover {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+  .div-2-discover {
+    margin: 32px 0 10px;
+  }
+  @media (max-width: 100%) {
+    .div-2-discover {
+      max-width: 100%;
+      margin-right: 4px;
+    }
+  }
+  .div-3-discover {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 100%) {
+    .div-3-discover {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column-discover {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 0px;
+  }
+  @media (max-width: 100%) {
+    .column-discover {
+      width: 100%;
+    }
+  }
+  .div-4-discover {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  @media (max-width: 100%) {
+    .div-4-discover {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-5-discover {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 100%) {
+    .div-5-discover {
+      max-width: 100%;
+    }
+  }
+  .div-6-discover {
+    display: flex;
+    flex-direction: column;
+    color: var(--Text-primary, #000);
+  }
+  @media (max-width: 100%) {
+    .div-6-discover {
+      max-width: 100%;
+    }
+  }
+  .div-7-discover {
+    text-align: left;
+    font: 600 16px/150% Roboto, sans-serif;
+  }
+  @media (max-width: 100%) {
+    .div-7-discover {
+      max-width: 100%;
+    }
+  }
+  .div-8-discover {
+    display: flex;
+    margin-top: 16px;
+    flex-direction: column;
+  }
+  @media (max-width: 100%) {
+    .div-8-discover {
+      max-width: 100%;
+    }
+  }
+  .div-9-discover {
+    font: 700 48px/58px Roboto, sans-serif;
+  }
+  @media (max-width: 100%) {
+    .div-9-discover {
+      max-width: 100%;
+      font-size: 40px;
+      line-height: 54px;
+    }
+  }
+  .div-10-discover {
+    margin-top: 24px;
+    font: 400 18px/27px Roboto, sans-serif;
+  }
+  @media (max-width: 100%) {
+    .div-10-discover {
+      max-width: 100%;
+    }
+  }
+  .div-11-discover {
+    margin-top: 32px;
+    padding: 8px 0;
+  }
+  @media (max-width: 100%) {
+    .div-11-discover {
+      max-width: 100%;
+    }
+  }
+  .div-12-discover {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 100%) {
+    .div-12-discover {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .div-13-discover {
+    display: flex;
+    flex-grow: 1;
+    padding-top: 64px;
+    flex-direction: column;
+    color: var(--Text-primary, #000);
+    font-weight: 800;
+  }
+  @media (max-width: 100%) {
+    .div-13-discover {
+      margin-top: 32px;
+    }
+  }
+  .div-14-discover {
+    font: 20px/140% Montserrat, sans-serif;
+  }
+  .div-15-discover {
+    margin-top: 16px;
+    font: 16px/24px Roboto, sans-serif;
+  }
+  .column-2-discover {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 20px;
+  }
+  @media (max-width: 100%) {
+    .column-2-discover {
+      width: 100%;
+    }
+  }
+  .div-16-discover {
+    display: flex;
+    padding-top: 64px;
+    flex-direction: column;
+    color: var(--Text-primary, #000);
+    font-weight: 800;
+  }
+  @media (max-width: 100%) {
+    .div-16-discover {
+      margin-top: 32px;
+    }
+  }
+  .div-17-discover {
+    font: 20px/140% Montserrat, sans-serif;
+  }
+  .div-18-discover {
+    margin-top: 16px;
+    font: 16px/24px Roboto, sans-serif;
+  }
+  .div-19-discover {
+    padding-top: 16px;
+    align-items: start;
+    align-self: start;
+    display: flex;
+    margin-top: 24px;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 150%;
+    justify-content: space-between;
+  }
+  .div-20-discover {
+    font-family: Roboto, sans-serif;
+    justify-content: center;
+    border-radius: 75px;
+    border-color: rgba(199, 217, 255, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: var(--Color-Neutral-black, #000);
+    color: var(--light-blue, #c7d9ff);
+    padding: 12px 24px;
+  }
+  @media (max-width: 100%) {
+    .div-20-discover {
+      padding: 0 20px;
+    }
+  }
+  
+  .div-21-discover {
+    justify-content: center;
+    border-radius: 75px;
+    display: flex;
+    margin-top: 12px;
+    gap: 8px;
+    color: var(--Text-primary, #000);
+  }
+  .div-22-discover {
+    font-family: Roboto, sans-serif;
+  }
+  .column-3-discover {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 30%;
+    margin-left: 20px;
+  }
+  @media (max-width: 100%) {
+    .column-3-discover {
+      width: 100%;
+    }
+  }
+  .img-discover {
+    aspect-ratio: 0.96;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+  }
+  @media (max-width: 100%) {
+    .img-discover {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+/* Apply a CSS reset to remove default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Apply a CSS reset to remove default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set full height and width for HTML and body */
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+.hidden-section-1 {
+display: none;
+margin-top: 20px;
+padding: 50px;
+border: 1px solid #ccc;
+background: linear-gradient(180deg, #a8c5ff 100%, #dae7ff 100%);
+font: 16px/24px Roboto, sans-serif;
+}
+.hidden-section-2 {
+display: none;
+margin-top: 20px;
+padding: 50px;
+border: 1px solid #ccc;
+background: linear-gradient(180deg, #a8c5ff 100%, #dae7ff 100%);
+font: 16px/24px Roboto, sans-serif;
+}
+.hidden-section-3 {
+display: none;
+margin-top: 20px;
+padding: 50px;
+border: 1px solid #ccc;
+background: linear-gradient(180deg, #a8c5ff 100%, #dae7ff 100%);
+font: 16px/24px Roboto, sans-serif;
+}
+
+.div-faqs {
+  align-items: center;
+  background: linear-gradient(180deg, #a8c5ff 0%, #dae7ff 100%);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 5% 3%;
+  height: 100%;
+}
+@media (max-width: 100%)and (max-height: 100%) {
+  .div-faqs {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+.div-2-faqs {
+  display: flex;
+  width: 50%;
+  max-width: 100%;
+  flex-direction: column;
+  margin: 32px 0 10px;
+}
+.div-3-faqs {
+  display: flex;
+  flex-direction: column;
+  color: var(--Text-primary, #000);
+  text-align: center;
+}
+@media (max-width: 100%) and (max-height: 100%) {
+  .div-3-faqs {
+    max-width: 100%;
+  }
+}
+.div-4-faqs {
+  font: 700 48px/120% Roboto, sans-serif;
+}
+@media (max-width: 100%)and (max-height: 100%) {
+  .div-4-faqs {
+    max-width: 100%;
+    font-size: 40px;
+  }
+}
+.div-5-faqs{
+  margin-top: 24px;
+  font: 400 18px/150% Roboto, sans-serif;
+}
+@media (max-width: 100%) and (max-height: 100%){
+  .div-5-faqs {
+    max-width: 100%;
+  }
+}
+.div-6-faqs {
+  display: flex;
+  margin-top: 80px;
+  flex-direction: column;
+  font-size: 18px;
+  color: var(--Text-primary, #000);
+  font-weight: 700;
+  line-height: 150%;
+}
+@media (max-width: 100%)and (max-height: 100%) {
+  .div-6-faqs {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.img-faqs {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 32px;
+}
+.div-9-faqs {
+  justify-content: center;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  margin-top: 16px;
+  gap: 0px;
+  padding: 20px 24px;
+}
+@media (max-width: 100%) and (max-height: 100%) {
+  .div-9-faqs {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+}
+.div-10-faqs {
+  font-family: Roboto, sans-serif;
+  flex: 1;
+  margin: auto 0;
+}
+@media (max-width: 100%) and (max-height: 100%) {
+  .div-10-faqs {
+    max-width: 100%;
+  }
+}
+.div-17-faqs {
+  align-self: center;
+  display: flex;
+  margin-top: 80px;
+  width: 80%;
+  max-width: 100%;
+  flex-direction: column;
+}
+@media (max-width: 100%) and (max-height: 100%) {
+  .div-17-faqs {
+    margin-top: 1%;
+  }
+}
+.div-18-faqs {
+  display: flex;
+  flex-direction: column;
+  color: var(--Text-primary, #000);
+  text-align: center;
+}
+@media (max-width: 100%) and (max-height: 100%) {
+  .div-18-faqs {
+    max-width: 100%;
+  }
+}
+.div-19-faqs {
+  font: 700 32px/130% Roboto, sans-serif;
+}
+@media (max-width: 100%) and (max-height: 100%){
+  .div-19-faqs {
+    max-width: 100%;
+  }
+}
+.div-20-faqs {
+  margin-top: 16px;
+  font: 400 18px/150% Roboto, sans-serif;
+}
+@media (max-width: 100%) and (max-height: 100%){
+  .div-20-faqs {
+    max-width: 100%;
+  }
+}
+.div-21-faqs {
+  justify-content: center;
+  border-radius: 75px;
+  border-color: rgba(199, 217, 255, 1);
+  border-style: solid;
+  border-width: 1px;
+  background-color: var(--Color-Neutral-black, #000);
+  align-self: center;
+  margin-top: 24px;
+  color: var(--light-blue, #c7d9ff);
+  white-space: nowrap;
+  padding: 12px 24px;
+  font: 800 16px/150% Roboto, sans-serif;
+}
+@media (max-width: 100%) and (max-height: 100%) {
+  .div-21-faqs {
+    white-space: initial;
+    padding: 0 20px;
+  }
+}
